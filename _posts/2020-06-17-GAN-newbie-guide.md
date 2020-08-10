@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Learining GAN Tutorial - GAN start to new GAN trand
+title: Deep Learning GAN Tutorial - GAN start to new GAN trand
 subtitle: GAN tutorial
 category: [GAN]
 tags: [GAN]
