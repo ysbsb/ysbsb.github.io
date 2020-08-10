@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2. ROS basic concept
+title: ROS Tutorial [2] ROS basic concept
 subtitle: ROS 기본 개념
 date:   2019-09-16 22:02:51
 author: Subin Yang
