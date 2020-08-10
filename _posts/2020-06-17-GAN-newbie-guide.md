@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Learining GAN Tutorial - 개념부터 최신 트렌드까지 정리
+title: Deep Learining GAN Tutorial - GAN start to new GAN trand
 subtitle: GAN tutorial
 category: [GAN]
 tags: [GAN]
