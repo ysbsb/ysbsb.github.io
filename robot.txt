@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caffe-mocha.github.io/sitemap.xml

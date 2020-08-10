@@ -55,3 +55,7 @@ header {
     @extend %padding-regular;
   }
 }
+.center {
+  display: block;
+  margin: auto;
+}
