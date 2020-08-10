@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. ROS introduction
+title: ROS Tutorial [1] ROS introduction
 subtitle: ROS란? ROS에 대한 소개, ROS 개념
 date:   2019-09-15 22:02:51
 author: Subin Yang
