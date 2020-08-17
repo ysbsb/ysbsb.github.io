@@ -3,7 +3,7 @@ layout: post
 title: 강화학습 DPG
 date:   2019-04-02 21:30:30
 author: Subin Yang
-categories: Reintorcement_learning
+categories: Reinforcement_learning
 comments: true
 use_math: true
 ---

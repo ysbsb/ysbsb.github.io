@@ -3,7 +3,7 @@ layout: post
 title: 강화학습 Policy Gradient, REINFORCE, Actor-Critic, A2C, A3C
 date:   2019-07-16 01:04:31
 author: Subin Yang
-categories: Reintorcement_learning
+categories: Reinforcement_learning
 comments: true
 use_math : true
 
