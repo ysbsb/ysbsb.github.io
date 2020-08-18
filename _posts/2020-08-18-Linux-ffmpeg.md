@@ -15,9 +15,9 @@ tags: [Linux]
 
 > 리눅스 생활일지편 입니다.
 >
-> 이번 포스팅에서는 우분투에서 ffmpeg 설치하는 방법에 대해 이야기 하려고 합니다.
+> 이번 포스팅에서는 우분투에서 ffmpeg 설치하는 방법에 대해 이야기합니다.
 
-
+<br>
 
 ffmpeg를 설치하기에 앞서 우분투에서 package update와 upgrade를 해줍니다.
 
@@ -30,7 +30,7 @@ $ sudo apt-get upgrade
 
 
 
-
+<br>
 
 <h3>dependency libraries 설치</h3>
 
@@ -40,7 +40,7 @@ $ sudo apt-get -y install autoconf automake build-essential cmake git-core libas
 
 ```
 
-
+<br>
 
 <h3>YASM install</h3>
 
@@ -57,6 +57,8 @@ $ make distclean
 ```
 
 
+
+<br>
 
 
 
@@ -75,20 +77,11 @@ make install
 
 
 
+<br>
+
 
 
 <h3>libx264 install</h3>
-
-```shell
-$ cd ~/ffmpeg_sources
-$ wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
-# error message
---2020-08-12 06:06:53--  http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
-Resolving download.videolan.org (download.videolan.org)... 213.36.253.2, 2a01:e0d:1:3:58bf:fa02:c0de:5
-Connecting to download.videolan.org (download.videolan.org)|213.36.253.2|:80... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2020-08-12 06:06:54 ERROR 404: Not Found.
-```
 
 
 
@@ -103,13 +96,15 @@ make install
 
 
 
+<br>
+
 <h3>libx265 install</h3>
 
 ```shell
 $ apt-get install libx265-dev libnuma-dev
 ```
 
-
+<br>
 
 <h3>libvpx install</h3>
 
@@ -117,7 +112,7 @@ $ apt-get install libx265-dev libnuma-dev
 $ apt-get install libvpx-dev
 ```
 
-
+<br>
 
 <h3>libfdk-aac install</h3>
 
@@ -125,7 +120,7 @@ $ apt-get install libvpx-dev
 $ apt-get install libvpx-dev
 ```
 
-
+<br>
 
 <h3>libmp3lame install</h3>
 
@@ -133,7 +128,7 @@ $ apt-get install libvpx-dev
 $ apt-get install libvpx-dev
 ```
 
-
+<br>
 
 <h3>libopus install</h3>
 
@@ -141,7 +136,7 @@ $ apt-get install libvpx-dev
 $ apt-get install libvpx-dev
 ```
 
-
+<br>
 
 <h3>libaom install</h3>
 
@@ -151,7 +146,7 @@ $ apt-get install libvpx-dev
 
 
 
-
+<br>
 
 <h3>ffmpeg install</h3>
 
@@ -193,4 +188,10 @@ hash -r
 
 
 
+<br>
 
+ffmpeg 설치하느라 수고 많으셨습니다.
+
+궁금하신 점이나 문의하실 점은 댓글로 남겨주세요. 
+
+지금까지 긴 글 읽어주셔서 감사합니다. :) 
