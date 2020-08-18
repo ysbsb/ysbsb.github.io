@@ -45,7 +45,7 @@ $ sudo apt-get -y install autoconf automake build-essential cmake git-core libas
 <h3>YASM install</h3>
 
 ```shell
-$ mkdir ~/ffmeg_sources
+$ mkdir ~/ffmpeg_sources
 $ cd ~/ffmpeg_sources
 $ wget http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
 $ tar xzvf yasm-1.2.0.tar.gz
