@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deep Learning GAN Tutorial - GAN start to new GAN trand
-subtitle: GAN tutorial
+title: 딥러닝 GAN 튜토리얼 - 시작부터 최신 트렌드까지 GAN 논문 순서
+subtitle: Deep Learning GAN Tutorial - GAN start to new GAN trand
 category: [GAN]
 tags: [GAN]
 comments: true
