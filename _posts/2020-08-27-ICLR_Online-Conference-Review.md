@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ICLR 2020 후기 ICLR 2020 online conference 참가 후기
+title: ICLR 2020 후기 - ICLR 2020 online conference 참가 후기
 subtitle: ICLR 2020 online conference review
 date:   2020-08-27 23:22:22
 author: Subin Yang
