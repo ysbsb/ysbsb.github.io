@@ -1,10 +1,11 @@
 ---
 layout: post
-title: SqueezeNet paper review
+title: SqueezeNet 논문 리뷰
 subtitle: SqueezeNet paper review
 date:   2020-02-13 14:50:13
 author: Subin Yang
 categories: CNN
+tags: [CNN]
 comments: true
 ---
 

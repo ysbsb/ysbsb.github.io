@@ -1,11 +1,12 @@
 ---
 
 layout: post
-title: MobileNet paper review, MobileNetv1 pytorch code implementation
+title: MobileNet 논문 리뷰, MobileNetv1 pytorch 코드 구현
 subtitle: MobileNet paper review, MobileNetv1 pytorch code
 date:   2020-02-20 15:07:07
 author: Subin Yang
 categories: CNN
+tags: [CNN]
 comments: true
 ---
 
