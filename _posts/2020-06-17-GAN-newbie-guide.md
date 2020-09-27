@@ -45,7 +45,7 @@ Ref: [https://dreamgonfly.github.io/2018/03/17/gan-explained.html](https://dream
 
 주요한 GAN 모델들을을 선정하고 종류별로 직접 도식화 해보았습니다. 저도 처음에 GAN을 공부할 때 이곳저곳 찾아보았던 기억이 있습니다. 처음 보시는 분들도 GAN이 어떤 종류들이 있고 어떻게 발전했는지 쉽게 파악하실 수 있도록 정리 해보았습니다.
 
-![GAN__](https://user-images.githubusercontent.com/37301677/84800922-758caf00-b039-11ea-8514-a3326720e870.png)
+![GAN 종류 정리_2](https://user-images.githubusercontent.com/37301677/94356821-94392200-00cd-11eb-8f57-5a2c2b18a2a1.png)
 
 제가 직접 정리하여 도식화 해보았습니다. 
 
