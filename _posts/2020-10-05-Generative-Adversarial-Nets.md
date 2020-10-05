@@ -62,9 +62,7 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 
 
-![](/home/subin-yang/Pictures/Screenshot from 2020-10-05 17-48-54.png)
-
-
+![Screenshot from 2020-10-05 17-48-54](https://user-images.githubusercontent.com/37301677/95059135-76a23300-0733-11eb-8bbc-e568a0f9dfe3.png)
 
 
 
@@ -96,6 +94,10 @@ $D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {dat
 
 
 
+![Screenshot from 2020-10-05 17-52-14](https://user-images.githubusercontent.com/37301677/95059178-8457b880-0733-11eb-9494-7f75f47003ba.png)
+
+
+
 $\begin{equation}
 \begin{aligned}
 V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x})) d x+\int_{\boldsymbol{z}} p_{\boldsymbol{z}}(\boldsymbol{z}) \log (1-D(g(\boldsymbol{z}))) d z \\\\\\\
@@ -108,6 +110,12 @@ V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\bolds
 실수 집합 안의 0이 아닌 어떠한 a,b에 대해서, 함수 $y \rightarrow a \log (y)+b \log (1-y)$ 는 0과 1사이에서 $\frac{a}{a+b}$ 일 때 최대값을 갖는다. 판별자는 $\operatorname{Supp}\left(p_{\text {data }}\right) \cup \operatorname{Supp}\left(p_{g}\right)$ 외부에서 정의할 필요가 없다. 
 
 D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $p_{g}$ (y=0 일 때) 으로부터 오는 것을 암시할 때, 조건부확률 $P(Y=y \mid \boldsymbol{x})$ 를 추정하는 log-lilkelihood를 최대화하는 것으로 해석될 수 있음에 주목하자. 식 1에서 minmax game은 다음과 같이 재구성될 수 있다.
+
+
+
+
+
+![Screenshot from 2020-10-05 17-52-34](https://user-images.githubusercontent.com/37301677/95059241-933e6b00-0733-11eb-81a3-bcdbaeb14e8a.png)
 
 
 
@@ -159,6 +167,10 @@ $C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$
 만약 G와 D가 충분한 용량을 가지고 있다면, 그리고 Algorithm 1의 각각의 step에서, 판별자는 주어진 G에 대해서 최적점을 도달 할 수 있고, $p_{g}$ 도 향상된 기준에 대해서 업데이트 될 수 있다.
 
 
+
+
+
+![Screenshot from 2020-10-05 17-52-40](https://user-images.githubusercontent.com/37301677/95059245-93d70180-0733-11eb-8995-6dc6177fce05.png)
 
 
 
