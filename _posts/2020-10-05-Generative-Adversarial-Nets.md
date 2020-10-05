@@ -80,23 +80,37 @@ $$\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(
 
 G가 고정되었을 때, 최적의 판별자 D는 다음과 같다.
 
+
+
 $$D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {data}}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}$$
+
+
 
 증명. 어떠안 생성자 G가 주어졌을 때, 판별자 D를 위한 학습 기준은 quantity $V(G,D)$ 를 최대화하는 것이다.
 
+
+
 $$\begin{aligned}V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x})) d x+\int_{z} p_{\boldsymbol{z}}(\boldsymbol{z}) \log (1-D(g(\boldsymbol{z}))) d z \\&=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x}))+p_{g}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) d x\end{aligned}$$
+
+s
 
 실수 집합 안의 0이 아닌 어떠한 a,b에 대해서, 함수 $y \rightarrow a \log (y)+b \log (1-y)$ 는 0과 1사이에서 $\frac{a}{a+b}$ 일 때 최대값을 갖는다. 판별자는 $\operatorname{Supp}\left(p_{\text {data }}\right) \cup \operatorname{Supp}\left(p_{g}\right)$ 외부에서 정의할 필요가 없다. 
 
 D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $p_{g}$ (y=0 일 때) 으로부터 오는 것을 암시할 때, 조건부확률 $P(Y=y \mid \boldsymbol{x})$ 를 추정하는 log-lilkelihood를 최대화하는 것으로 해석될 수 있음에 주목하자. 식 1에서 minmax game은 다음과 같이 재구성될 수 있다.
 
+
+
 $$\begin{aligned}C(G) &=\max _{D} V(G, D) \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}}\left[\log \left(1-D_{G}^{*}(G(\boldsymbol{z}))\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log \frac{p_{\text {data }}(\boldsymbol{x})}{P_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \frac{p_{g}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]\end{aligned}$$
+
+
 
 ### Theorem 1.
 
 가상의 학습 기준 $C(G)$ 의 글로벌 최저점에 도달하는 것은 $p_{g}=p_{\text {data}}$ 인 것과 필요충분조건이다. 해당하는 점에서, $C(G)$ 는 값 $-\log 4$ 에 도달한다.
 
-증명. $p_{g}=p_{\text {data }}$이기 위해서, $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$가 된다. 그러므로 $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$일 때 식4를 조사하면, 우리는 $C(G)=\log \frac{1}{2}+\log \frac{1}{2}=-\log 4$ 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
+증명. $p_{g}=p_{\text {data }}$이기 위해서, $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$ 가 된다. 
+
+그러므로 $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$일 때 식4를 조사하면, 우리는 $C(G)=\log \frac{1}{2}+\log \frac{1}{2}=-\log 4$ 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
 
 $$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}[-\log 2]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}[-\log 2]=-\log 4$$
 
@@ -116,17 +130,9 @@ $$C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$$
 
 만약 G와 D가 충분한 용량을 가지고 있다면, 그리고 Algorithm 1의 각각의 step에서, 판별자는 주어진 G에 대해서 최적점을 도달 할 수 있고, $p_{g}$ 도 향상된 기준에 대해서 업데이트 될 수 있다.
 
-\begin{equation}
-\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
-\end{equation}
 
 
-
-
-$$
-\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
-$$
-
+$$ \mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] $$
 
 
 
