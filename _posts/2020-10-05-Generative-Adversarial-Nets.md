@@ -120,7 +120,17 @@ $$C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$$
 \mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
 \end{equation}
 
-$$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]$$
+
+
+
+$$
+\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
+$$
+
+
+
+
+
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
