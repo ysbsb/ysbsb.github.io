@@ -60,7 +60,13 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 다른 말로, D와 G는 value function V(G, D)라는 두 명의 플레이어가 있는 minmax game을 플레이한다.
 
-$\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]$
+
+
+$\begin{equation}
+\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]
+\end{equation}$
+
+
 
 다음 섹션에서, 우리는 적대적 네트워크의 이론적인 분석을 제시하고, 본질적으로 예를 들어 non-parametric limit과 같이 하나가 G와 D가 충분한 가능성이 주어졌을 때 데이터 생성 분포를 회복하도록 하는 학습 기준을 보여준다. 덜 공식적이지만 접근법에 대한 더 교육적인 설명이 있는 Figure 1을 보자. 실제로, 우리는 iterative 하고 수치적인 접근법으로 game을 구현해야 한다. 학습의 내부 루프에서 D를 최적화하는 것을 끝내는 것은 계산적으로 안 좋고, 그리고 제한된 데이터셋에 대해 오버피팅의 결과가 나올 수 있다. 대신에, 우리는 k 스텝 동안 D를 최적화하고 한번의 step 동안 G를 최적화 하는 것을 번갈아했다. 이 결과로 D는 최적의 솔루션에 가깝게 유지가 되었고, 따라서 G도 충분히 천천히 변화했다. 이 전략은 SML/PCD training이 학습의 내우 루프의 일부에서 Markov chain이 burning 하는 것을 피하기 위해서 한번의 학습 단계에서 다음 학습 단게까지 Markov chain의 샘플을 유지하는 것과 유사하다. 과정은 공식적으로 algorithm 1에 제시되어 있다.  
 
@@ -105,7 +111,18 @@ D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $
 
 
 
-$C(G) &=\max _{D} V(G, D) \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}}\left[\log \left(1-D_{G}^{*}(G(\boldsymbol{z}))\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log \frac{p_{\text {data }}(\boldsymbol{x})}{P_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \frac{p_{g}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]$
+
+
+$\begin{equation}
+\begin{aligned}
+C(G) &=\max _{D} V(G, D) \\
+&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}}\left[\log \left(1-D_{G}^{*}(G(\boldsymbol{z}))\right)\right] \\
+&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] \\
+&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log \frac{p_{\text {data }}(\boldsymbol{x})}{P_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \frac{p_{g}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]
+\end{aligned}
+\end{equation}$
+
+
 
 
 
@@ -117,7 +134,13 @@ $C(G) &=\max _{D} V(G, D) \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}
 
 그러므로 $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$일 때 식4를 조사하면, 우리는 $C(G)=\log \frac{1}{2}+\log \frac{1}{2}=-\log 4$ 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
 
-$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}[-\log 2]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}[-\log 2]=-\log 4$
+
+
+$\begin{equation}
+\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}[-\log 2]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}[-\log 2]=-\log 4
+\end{equation}$
+
+
 
 임을 관찰하고, 이 식을 $C(G)=V\left(D_{G}^{*}, G\right)$ 으로부터 뺄 때, 우리는 다음과 같은 식을 얻을 수 있다.
 
@@ -137,15 +160,21 @@ $C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$
 
 
 
-$ \mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] $
 
 
+$\begin{equation}
+\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
+\end{equation}$
 
 
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
-증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 이고 $f_{\alpha}(x)$ 가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다. 이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 
+
+다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 이고 $f_{\alpha}(x)$ 가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
+
+이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
 
 실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
