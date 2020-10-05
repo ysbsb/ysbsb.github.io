@@ -98,13 +98,6 @@ $D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {dat
 
 
 
-$\begin{equation}
-\begin{aligned}
-V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x})) d x+\int_{\boldsymbol{z}} p_{\boldsymbol{z}}(\boldsymbol{z}) \log (1-D(g(\boldsymbol{z}))) d z \\\\\\\
-&=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x}))+p_{g}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) d x
-\end{aligned}
-\end{equation}$
-
 
 
 실수 집합 안의 0이 아닌 어떠한 a,b에 대해서, 함수 $y \rightarrow a \log (y)+b \log (1-y)$ 는 0과 1사이에서 $\frac{a}{a+b}$ 일 때 최대값을 갖는다. 판별자는 $\operatorname{Supp}\left(p_{\text {data }}\right) \cup \operatorname{Supp}\left(p_{g}\right)$ 외부에서 정의할 필요가 없다. 
@@ -121,19 +114,6 @@ D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $
 
 
 
-$\begin{equation}
-\begin{aligned}
-C(G) &=\max _{D} V(G, D) \\
-&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}}\left[\log \left(1-D_{G}^{*}(G(\boldsymbol{z}))\right)\right] \\
-&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] \\
-&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log \frac{p_{\text {data }}(\boldsymbol{x})}{P_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \frac{p_{g}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]
-\end{aligned}
-\end{equation}$
-
-
-
-
-
 ### Theorem 1.
 
 가상의 학습 기준 $C(G)$ 의 글로벌 최저점에 도달하는 것은 $p_{g}=p_{\text {data}}$ 인 것과 필요충분조건이다. 해당하는 점에서, $C(G)$ 는 값 $-\log 4$ 에 도달한다.
@@ -144,9 +124,9 @@ C(G) &=\max _{D} V(G, D) \\
 
 
 
-$\begin{equation}
-\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}[-\log 2]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}[-\log 2]=-\log 4
-\end{equation}$
+![Screenshot from 2020-10-05 17-52-34](https://user-images.githubusercontent.com/37301677/95059241-933e6b00-0733-11eb-81a3-bcdbaeb14e8a.png)
+
+
 
 
 
@@ -174,27 +154,17 @@ $C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$
 
 
 
-$\begin{equation}
-\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
-\end{equation}$
-
 
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
 증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 
 
-다른 말로, 모든 $\alpha$에 대한 $x$에서 $ f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x) $ 이고 $ f_{\alpha}(x) $ 
+다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$이고 $f_{\alpha}(x)$가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
 
-가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
+이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
 
-이것은 최적의 D와 이에 상응하는 G가 있을 때   $p_{g}$ 
-
-에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
-
-실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$_
-
-를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
+실제로, adversarial nets는 함수 $G\left(\boldsymbol{z};\theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
 <br>
 
