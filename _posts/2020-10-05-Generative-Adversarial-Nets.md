@@ -70,11 +70,21 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 실제로, 식 1은 G가 학습을 잘 하도록 충분한 그래디언트를 제공하지 못할 수 있다. 학습의 초기애서, G가 안 좋을 때는, D는 샘플들이 학습 데이터와 명확하게 다르기 때문에 높은 자신감을 가지고 샘플들을 거절할 수 있다.  이러한 경우에, $log(1-D(G(z))$ 는 포화된다. G가 $log(1-D(G(z))$ 를 최소화하도록 학습시키는 대신에, 우리는 G가 $logD(G(z))$ 를 최대화하도록 학습시킬 수 있다. 이러한 목적함수는 G와 D의 다이나믹스가 같은 고정점을 만들지만 학습의 초기에서 더 강력한 그래디언트를 제공할 수 있다.
 
+
+
+![Screenshot from 2020-10-05 18-24-46](https://user-images.githubusercontent.com/37301677/95062524-0fd34880-0738-11eb-8f2c-03e4b242848c.png)
+
  <br>
 
 # 4. Theoretical Results
 
 생성자 G는 암묵적으로 샘플들의 분포 $G(z)$ 가 $z$~$p_{z}$ 를 다를 때 확률 분포 $p_{g}$ 를 정의한다. 그러므로, 우리는 Algorithm 1이 $p_{data}$ 에 대한 좋은 측정기가 되도록 수렴하도록 한다. 이 섹션의 결과는 non-parametric 셋팅을 통해 수행되었다. (예를 들어, 우리는 확률 밀도 함수의 공간에서 수렴을 연구하여 무한한 능력을 가진 모델을 표현한다.) 
+
+
+
+![Screenshot from 2020-10-05 18-25-13](https://user-images.githubusercontent.com/37301677/95062560-1f529180-0738-11eb-887e-67c5c61a2a5a.png)
+
+
 
 ## 4.1 Global Optimality of $p_{g}=p_{\text {data }}$
 
@@ -175,6 +185,14 @@ $C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$
 우리는 G로 생성된 샘플에 Gaussian Parzen window를 핏팅하고 이 분포 하에서 log-likelihood를 reporting 함으로써 $p_{g}$ 하에서의 테스트셋 데이터의 확률을 예측할 수 있다. Gaussian의 $\sigma$ 파라미터는 validation set에서 교차 검증을 통해 얻어질 수 있다. 이 과정은 Breuleux et al에 의해 소개되었고, 정확한 likelihood가 다루기 힘든 다양한 생성 모델에 사용된다. 결과들은 Table 1에 제시되었다. Likelihood를 추정하는 이 방법은 약간 높은 분산을 가지고 높은 차원의 공간에서는 잘 작동하지 않지만 우리가 아는 선에서 가장 가능한 최고의 방법이다. 샘플링 할 수 있지만 직접적으로 likelihood를 추정할 수 없는 생성 모델의 발전은 이러한 모델을 어떻게 평가하는지에 추가 연구에 대한 동기를 준다.
 
 Figure 2와 3에서 우리는 학습 후에 생성자로부터 샘플이 된 것들을 보여준다. 우리는 이러한 샘플들이 기존의 방법들에 의해 생성된 샘플들보다 좋다고 주장하지는 않지만, 우리는 이러한 샘플들이 적어도 문헌 상에서의 생성 모델과 비교할만 하고 adversarial 프레임워크의 잠재력을 강조한다고 믿는다.
+
+
+
+![Screenshot from 2020-10-05 18-26-01](https://user-images.githubusercontent.com/37301677/95062760-5de84c00-0738-11eb-834b-802ffdd98d8d.png)
+![Screenshot from 2020-10-05 18-26-11](https://user-images.githubusercontent.com/37301677/95062765-5e80e280-0738-11eb-9fa8-ac947f0e33ad.png)
+![Screenshot from 2020-10-05 18-26-31](https://user-images.githubusercontent.com/37301677/95062768-5f197900-0738-11eb-809c-272b2e1f1690.png)
+
+
 
 <br>
 
