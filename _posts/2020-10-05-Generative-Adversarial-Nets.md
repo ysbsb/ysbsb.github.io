@@ -116,6 +116,10 @@ $$C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$$
 
 만약 G와 D가 충분한 용량을 가지고 있다면, 그리고 Algorithm 1의 각각의 step에서, 판별자는 주어진 G에 대해서 최적점을 도달 할 수 있고, $p_{g}$ 도 향상된 기준에 대해서 업데이트 될 수 있다.
 
+\begin{equation}
+\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]
+\end{equation}
+
 $$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {daa}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]$$
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
