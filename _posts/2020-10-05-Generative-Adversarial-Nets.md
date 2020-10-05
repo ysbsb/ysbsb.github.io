@@ -60,7 +60,7 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 다른 말로, D와 G는 value function V(G, D)라는 두 명의 플레이어가 있는 minmax game을 플레이한다.
 
-$$\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]$$
+$$\begin{aligned}\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]\end{aligned}$$
 
 다음 섹션에서, 우리는 적대적 네트워크의 이론적인 분석을 제시하고, 본질적으로 예를 들어 non-parametric limit과 같이 하나가 G와 D가 충분한 가능성이 주어졌을 때 데이터 생성 분포를 회복하도록 하는 학습 기준을 보여준다. 덜 공식적이지만 접근법에 대한 더 교육적인 설명이 있는 Figure 1을 보자. 실제로, 우리는 iterative 하고 수치적인 접근법으로 game을 구현해야 한다. 학습의 내부 루프에서 D를 최적화하는 것을 끝내는 것은 계산적으로 안 좋고, 그리고 제한된 데이터셋에 대해 오버피팅의 결과가 나올 수 있다. 대신에, 우리는 k 스텝 동안 D를 최적화하고 한번의 step 동안 G를 최적화 하는 것을 번갈아했다. 이 결과로 D는 최적의 솔루션에 가깝게 유지가 되었고, 따라서 G도 충분히 천천히 변화했다. 이 전략은 SML/PCD training이 학습의 내우 루프의 일부에서 Markov chain이 burning 하는 것을 피하기 위해서 한번의 학습 단계에서 다음 학습 단게까지 Markov chain의 샘플을 유지하는 것과 유사하다. 과정은 공식적으로 algorithm 1에 제시되어 있다.  
 
@@ -82,7 +82,7 @@ G가 고정되었을 때, 최적의 판별자 D는 다음과 같다.
 
 
 
-$$D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {data}}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}$$
+$$\begin{aligned}D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {data}}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\end{aligned}$$
 
 
 
@@ -92,7 +92,7 @@ $$D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {da
 
 $$\begin{aligned}V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x})) d x+\int_{z} p_{\boldsymbol{z}}(\boldsymbol{z}) \log (1-D(g(\boldsymbol{z}))) d z \\&=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x}))+p_{g}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) d x\end{aligned}$$
 
-s
+
 
 실수 집합 안의 0이 아닌 어떠한 a,b에 대해서, 함수 $y \rightarrow a \log (y)+b \log (1-y)$ 는 0과 1사이에서 $\frac{a}{a+b}$ 일 때 최대값을 갖는다. 판별자는 $\operatorname{Supp}\left(p_{\text {data }}\right) \cup \operatorname{Supp}\left(p_{g}\right)$ 외부에서 정의할 필요가 없다. 
 
