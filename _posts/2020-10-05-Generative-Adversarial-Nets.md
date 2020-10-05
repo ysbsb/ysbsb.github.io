@@ -70,17 +70,15 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 실제로, 식 1은 G가 학습을 잘 하도록 충분한 그래디언트를 제공하지 못할 수 있다. 학습의 초기애서, G가 안 좋을 때는, D는 샘플들이 학습 데이터와 명확하게 다르기 때문에 높은 자신감을 가지고 샘플들을 거절할 수 있다.  이러한 경우에, $log(1-D(G(z))$ 는 포화된다. G가 $log(1-D(G(z))$ 를 최소화하도록 학습시키는 대신에, 우리는 G가 $logD(G(z))$ 를 최대화하도록 학습시킬 수 있다. 이러한 목적함수는 G와 D의 다이나믹스가 같은 고정점을 만들지만 학습의 초기에서 더 강력한 그래디언트를 제공할 수 있다.
 
-
-
 ![Screenshot from 2020-10-05 18-24-46](https://user-images.githubusercontent.com/37301677/95062524-0fd34880-0738-11eb-8f2c-03e4b242848c.png)
+
+
 
  <br>
 
 # 4. Theoretical Results
 
 생성자 G는 암묵적으로 샘플들의 분포 $G(z)$ 가 $z$~$p_{z}$ 를 다를 때 확률 분포 $p_{g}$ 를 정의한다. 그러므로, 우리는 Algorithm 1이 $p_{data}$ 에 대한 좋은 측정기가 되도록 수렴하도록 한다. 이 섹션의 결과는 non-parametric 셋팅을 통해 수행되었다. (예를 들어, 우리는 확률 밀도 함수의 공간에서 수렴을 연구하여 무한한 능력을 가진 모델을 표현한다.) 
-
-
 
 ![Screenshot from 2020-10-05 18-25-13](https://user-images.githubusercontent.com/37301677/95062560-1f529180-0738-11eb-887e-67c5c61a2a5a.png)
 
@@ -124,6 +122,8 @@ D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $
 
 
 
+
+
 ### Theorem 1.
 
 가상의 학습 기준 $C(G)$ 의 글로벌 최저점에 도달하는 것은 $p_{g}=p_{\text {data}}$ 인 것과 필요충분조건이다. 해당하는 점에서, $C(G)$ 는 값 $-\log 4$ 에 도달한다.
@@ -135,8 +135,6 @@ D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $
 
 
 ![Screenshot from 2020-10-05 17-52-34](https://user-images.githubusercontent.com/37301677/95059241-933e6b00-0733-11eb-81a3-bcdbaeb14e8a.png)
-
-
 
 
 
@@ -164,17 +162,21 @@ $C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$
 
 
 
-
-
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
 증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 
 
-다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$이고 $f_{\alpha}(x)$가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
+다른 말로, 모든 $\alpha$에 대한 $x$에서 $ f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x) $ 이고 $ f_{\alpha}(x) $ 
 
-이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
 
-실제로, adversarial nets는 함수 $G\left(\boldsymbol{z};\theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
+이것은 최적의 D와 이에 상응하는 G가 있을 때   $p_{g}$ 
+
+에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+
+실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$_
+
+를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
 <br>
 
@@ -189,7 +191,13 @@ Figure 2와 3에서 우리는 학습 후에 생성자로부터 샘플이 된 것
 
 
 ![Screenshot from 2020-10-05 18-26-01](https://user-images.githubusercontent.com/37301677/95062760-5de84c00-0738-11eb-834b-802ffdd98d8d.png)
+
+
+
 ![Screenshot from 2020-10-05 18-26-11](https://user-images.githubusercontent.com/37301677/95062765-5e80e280-0738-11eb-9fa8-ac947f0e33ad.png)
+
+
+
 ![Screenshot from 2020-10-05 18-26-31](https://user-images.githubusercontent.com/37301677/95062768-5f197900-0738-11eb-809c-272b2e1f1690.png)
 
 
@@ -216,12 +224,3 @@ Figure 2와 3에서 우리는 학습 후에 생성자로부터 샘플이 된 것
 
 본 논문은 적대적 모델링 프레임워크의 실행 가능성을 입증하여 이러한 연구 방향이 유용할 수 있음을 시사한다.
 
-
-
-
-
-<br>
-
-지금까지 Generative Adversarial Networks 논문 리뷰를 해보았습니다. 저도 논문을 읽으며 공부해나가는 단계라 부족한 점이 있을 수 있습니다. 질문이나 지적, 요청해주실 부분이 있다면 댓글이나 메일 부탁드립니다.
-
-읽어주셔서 감사합니다. 😃
