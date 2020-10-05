@@ -62,9 +62,9 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 
 
-$\begin{equation}
-\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]
-\end{equation}$
+![](/home/subin-yang/Pictures/Screenshot from 2020-10-05 17-48-54.png)
+
+
 
 
 
@@ -172,11 +172,17 @@ $\begin{equation}
 
 증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 
 
-다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 이고 $f_{\alpha}(x)$ 가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
+다른 말로, 모든 $\alpha$에 대한 $x$에서 $ f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x) $ 이고 $ f_{\alpha}(x) $ 
 
-이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다.
 
-실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
+이것은 최적의 D와 이에 상응하는 G가 있을 때   $p_{g}$ 
+
+에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+
+실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$_
+
+를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
 <br>
 
