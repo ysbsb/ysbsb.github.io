@@ -145,9 +145,15 @@ $\partial f_{\beta}(x) \in \partial f$
 
 우리는 adversarial nets를 MNIST, Toronto Face Database(TFD), CIFAR-10을 포함하는 범위에서 학습했다. 생성자 네트워크는 ReLU와 sigmoid activation을 혼합하여 사용했고, 판별자 네트워크는 maxout activation을 사용했다. 판별자 네트워크를 학습 할 때 dropout이 적용되었다. 우리의 이론적 프레임워크에서 생성자의 중간 레이어에 dropout 과 다른 노이즈를 사용할 수 있다. 우리는 생성자 네트워크의 가장 마지막 레이어에만 노이즈를 사용했다.
 
-우리는 G로 생성된 샘플에 Gaussian Parzen window를 핏팅하고 이 분포 하에서 log-likelihood를 reporting 함으로써 $p_{g}$ 하에서의 테스트셋 데이터의 확률을 예측할 수 있다. Gaussian의 $\sigma$ 파라미터는 validation set에서 교차 검증을 통해 얻어질 수 있다. 이 과정은 Breuleux et al에 의해 소개되었고, 정확한 likelihood가 다루기 힘든 다양한 생성 모델에 사용된다. 결과들은 Table 1에 제시되었다. Likelihood를 추정하는 이 방법은 약간 높은 분산을 가지고 높은 차원의 공간에서는 잘 작동하지 않지만 우리가 아는 선에서 가장 가능한 최고의 방법이다. 샘플링 할 수 있지만 직접적으로 likelihood를 추정할 수 없는 생성 모델의 발전은 이러한 모델을 어떻게 평가하는지에 추가 연구에 대한 동기를 준다.
+우리는 G로 생성된 샘플에 Gaussian Parzen window를 핏팅하고 이 분포 하에서 log-likelihood를 reporting 함으로써 $p_{g}$ 하에서의 테스트셋 데이터의 확률을 예측할 수 있다. Gaussian의 $\sigma$ 파라미터는 validation set에서 교차 검증을 통해 얻어질 수 있다. 이 과정은 Breuleux et al에 의해 소개되었고, 정확한 likelihood가 다루기 힘든 다양한 생성 모델에 사용된다. 결과들은 Table 1에 제시되었다. Likelihood를 추정하는 이 방법은 약간 높은 분산을 가지고 높은 차원의 공간에서는 잘 작동하지 않지만 우리가 아는 선에서 가장 가능한 최고의 방법이다. 샘플링 할 수 있지만 직접적으로 likelihood를 추정할 수 없는 생성 모델의 발전은 이러한 모델을 어떻게 평가하는지에 추가 연구에 대한 동기를 준다
+
+![Screenshot from 2020-10-07 15-40-52](https://user-images.githubusercontent.com/37301677/95296359-9d877300-08b3-11eb-8074-3206e937116f.png)
 
 Figure 2와 3에서 우리는 학습 후에 생성자로부터 샘플이 된 것들을 보여준다. 우리는 이러한 샘플들이 기존의 방법들에 의해 생성된 샘플들보다 좋다고 주장하지는 않지만, 우리는 이러한 샘플들이 적어도 문헌 상에서의 생성 모델과 비교할만 하고 adversarial 프레임워크의 잠재력을 강조한다고 믿는다.
+
+![Screenshot from 2020-10-07 15-41-03](https://user-images.githubusercontent.com/37301677/95296318-85afef00-08b3-11eb-8c2c-c03e5bf757d4.png)
+
+![Screenshot from 2020-10-07 15-42-17](https://user-images.githubusercontent.com/37301677/95296406-b1cb7000-08b3-11eb-88c8-28f465eabf7f.png)
 
 # 6. Advantages and disadvantages
 
