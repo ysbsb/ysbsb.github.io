@@ -103,7 +103,9 @@ D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $
 
 가상의 학습 기준 $C(G)$ 의 글로벌 최저점에 도달하는 것은 $p_{g}=p_{\text {data}}$ 인 것과 필요충분조건이다. 해당하는 점에서, $C(G)$ 는 값 $-\log 4$ 에 도달한다.
 
-증명. $p_{g}=p_{\text {data }}$이기 위해서, $D_{G}^{*}(\boldsymbol{x})$ $=\frac{1}{2}$가 된다. 그러므로 $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$일 때 식4를 조사하면, 우리는 $C(G)=\log \frac{1}{2}+\log \frac{1}{2}=-\log 4$ 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
+증명. $p_{g}=p_{\text {data }}$이기 위해서, 
+
+<img src="https://user-images.githubusercontent.com/37301677/95294562-73808180-08b0-11eb-8cc8-8770200b871d.png" alt="Screenshot from 2020-10-07 15-19-01" style="zoom:67%;" />가 된다. 그러므로 <img src="https://user-images.githubusercontent.com/37301677/95294562-73808180-08b0-11eb-8cc8-8770200b871d.png" alt="Screenshot from 2020-10-07 15-19-01" style="zoom: 67%;" />일 때 식4를 조사하면, 우리는 <img src="https://user-images.githubusercontent.com/37301677/95294820-eee23300-08b0-11eb-8f4d-4d47040d943f.png" alt="Screenshot from 2020-10-07 15-22-32" style="zoom:67%;" /> 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
 
 ![Screenshot from 2020-10-07 14-51-19](https://user-images.githubusercontent.com/37301677/95292545-9e68d680-08ac-11eb-9a67-b9898c943e4b.png)
 
@@ -129,17 +131,13 @@ KL은 Kullback-Leibler divergence 이다. 우리는 이전의 표현에서 Jense
 
 증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 다른 말로, 모든 $\alpha$에 대한 $x$에서 
 
-![Screenshot from 2020-10-07 14-58-55](https://user-images.githubusercontent.com/37301677/95293994-75961080-08af-11eb-89c0-6739f058fbc7.png)
+<img src="https://user-images.githubusercontent.com/37301677/95293994-75961080-08af-11eb-89c0-6739f058fbc7.png" alt="Screenshot from 2020-10-07 14-58-55" style="zoom: 80%;" />가 convex 하다면, 
 
-가 convex 하다면, 
-
-![Screenshot from 2020-10-07 15-12-35](https://user-images.githubusercontent.com/37301677/95294047-8ba3d100-08af-11eb-92d5-01c1035a9082.png)
-
-를 만족할 때
+<img src="https://user-images.githubusercontent.com/37301677/95294047-8ba3d100-08af-11eb-92d5-01c1035a9082.png" alt="Screenshot from 2020-10-07 15-12-35" style="zoom:80%;" />를 만족할 때
 
 $\partial f_{\beta}(x) \in \partial f$
 
-가 될 것이다. 이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup_{D}U\left(p_{g},D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
+될 것이다. 이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup_{D}U\left(p_{g},D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
 
 실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
