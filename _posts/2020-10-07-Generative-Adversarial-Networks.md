@@ -161,9 +161,15 @@ Figure 2와 3에서 우리는 학습 후에 생성자로부터 샘플이 된 것
 
 1. Conditional generative model $p(\boldsymbol{x} \mid \boldsymbol{c})$ 는 G와 D 둘 다에 c를 더함으로써 얻어질 수 있다.
 2. 대략적인 추론 학습은 x가 주어졌을 때 z를 예측하기 위해서 auxiliary network를 학습함에 의해서 수행될 수 있다. 이것은 wake-sleep 알고리즘에 의해 학습된 추론 네트웤크와 비슷하지만 추론 네트워크가 생성자 네트워크긔 학습이 끝난 후에 고정된 생성자를 위해 학습된다는 장점이 있다.
-3. 모든 조건부 확률 $p\left(\boldsymbol{x}_{S}\mid\boldsymbol{x}_{\not \not}\right)$ 를 대략적으로 모델링 할 수 있다. S는 파라미터를 공유하는 조건부 모델의 집합을 학습에 의한 x 인덱스의 하위 집합이다. 본질적으로, adversarial nets를 사용하여 결정론적 MP-DBM의 확률적 확장을 구현할 수 있다.
+3. 모든 조건부 확률 <img src="https://user-images.githubusercontent.com/37301677/95295577-49c85a00-08b2-11eb-9e0f-f58ddc5a8756.png" alt="Screenshot from 2020-10-07 15-32-09" style="zoom:67%;" /> 를 대략적으로 모델링 할 수 있다. S는 파라미터를 공유하는 조건부 모델의 집합을 학습에 의한 x 인덱스의 하위 집합이다. 본질적으로, adversarial nets를 사용하여 결정론적 MP-DBM의 확률적 확장을 구현할 수 있다.
 4. Semi-supervised learning: 판별자 혹은 추론 네트워크로부터 나온 feature는 제한된 라벨이 데이터가 있을 때 분류기의 성능을 향상시킬 수 있다.
 5. Efficiency improvements: 학습은 G와 D를 조정을 위한 방법을 나누거나 학습 동안 z를 샘플하기 위한 더 좋은 분포를 결정하는 것에 의해 가속화될 수 있다.
 
 본 논문은 적대적 모델링 프레임워크의 실행 가능성을 입증하여 이러한 연구 방향이 유용할 수 있음을 시사한다.
+
+<br>
+
+지금까지 Generative Adversarial Networks 논문 리뷰를 해보았습니다. 저도 논문을 읽으며 공부해나가는 단계라 부족한 점이 있을 수 있습니다. 질문이나 지적, 요청해주실 부분이 있다면 댓글이나 메일 부탁드립니다.
+
+읽어주셔서 감사합니다. 😃
 
