@@ -115,7 +115,7 @@ KL은 Kullback-Leibler divergence 이다. 우리는 이전의 표현에서 Jense
 
 ![Screenshot from 2020-10-07 14-51-34](https://user-images.githubusercontent.com/37301677/95292549-9f9a0380-08ac-11eb-8f2e-9fcb0f587a22.png)
 
-두 분포 사이의 Jensen-Shannon divergence는 항상 음수가 아니고 분포가 같을 때만 0이기 때문에, 우리는 오직 해가 $p_{g}=p_{\text {data }}$일 때 $C^{*}=-\log (4)$ 는 $C(G)$ 의 글로벌 최저점이라는 것을 보일 수 잇다. 즉, 생성 모델은 데이터 생성 프로세스를 완벽하게 복제할 수 있다.
+두 분포 사이의 Jensen-Shannon divergence는 항상 음수가 아니고 분포가 같을 때만 0이기 때문에, 우리는 오직 해가 $p_{g}=p_{\text {data }}$일 때 $C^{*}=-\log (4)$ 는 $C(G)$ 의 글로벌 최저점이라는 것을 보일 수 있다. 즉, 생성 모델은 데이터 생성 프로세스를 완벽하게 복제할 수 있다.
 
 ## 4.2 Convergence of Algorithm 1
 
@@ -127,7 +127,9 @@ KL은 Kullback-Leibler divergence 이다. 우리는 이전의 표현에서 Jense
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
-증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 다른 말로, 모든 $\alpha$에 대한 $x$에서 $f(x)=\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 이고 $f_{\alpha}(x)$ 가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다. 이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수럄한다.
+증명. 위의 기준에서 수행된 $p_{g}$ 에 대한 함수 $V(G, D)=U\left(p_{g}, D\right)$  를 고려하자. $U\left(p_{g}, D\right)$ 가 $p_{g}$ 에서 convex 함에 주목하자. 최고 convex 함수의 부도함수(subderiatives)는 최대값이 달성되는 점에서의 함수의 도함수를 포함한다. 다른 말로, 모든 $\alpha$에 대한 $x$에서 $\begin{equation}
+\sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)
+\end{equation}$ 이고 $f_{\alpha}(x)$ 가 convex 하다면, $\beta=\arg \sup _{\alpha \in \mathcal{A}} f_{\alpha}(x)$ 를 만족할 때 $\partial f_{\beta}(x)$ 가 될 것이다. 이것은 최적의 D와 이에 상응하는 G가 있을 때 $p_{g}$에 대한 gradient descent update를 계산하는 것과 같다. 이론1에서 증명된 유니크한 글로벌 최적점의 $p_{g}$에서 $\sup _{D} U\left(p_{g}, D\right)$ 는 convex이고, 그러므로 $p_{g}$에 대해 충분히 작은 업데이트를 하면, $p_{g}$는 $p_{x}$에 수렴한다.
 
 실제로, adversarial nets는 함수 $G\left(\boldsymbol{z} ; \theta_{g}\right)$를 통해서 제한된 $p_{g}$ 분포 계열을 내타해고, 그리고 우리는 $p_{g}$ 대신에 $\theta_{g}$를 최적화한다. G를 정의하기 위해 다층레이어 퍼셉트론을 사용하여 파라미터 공간에 다층의 critical point 들을 도입할 수 있다. 하지만, 다층레이어 퍼셉트론의 우수한 성능은 실제로 그들이 이론적인 개런티가 부족함에도 불구하고 그것들은 사용하기에 합리적인 모델이라는 것을 제안한다.
 
