@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GAN 논문 리뷰 - Generative Adversarial Networks (NIPS2015)
-subtitle: GAN paper review - Generative Adversarial Networks (NIPS2015)
+title: GAN 논문 리뷰 - Generative Adversarial Networks (NIPS2014)
+subtitle: GAN paper review - Generative Adversarial Networks (NIPS2014)
 category: [GAN]
 tags: [GAN]
 comments: true
@@ -21,7 +21,7 @@ use_math: true
 
 
 
-<em><strong>Generative Adversarial Networks, Ian Goodfello et al, NIPS 2015</strong></em>  [Paper link](https://arxiv.org/pdf/1406.2661.pdf)
+<em><strong>Generative Adversarial Networks, Ian Goodfello et al, NIPS 2014</strong></em>  [Paper link](https://arxiv.org/pdf/1406.2661.pdf)
 
 논문에 대한 해석은 간결한 문장으로 표현하려고 합니다. 그림과 표는 모두 해당 논문을 참조하였습니다.
 
@@ -61,17 +61,21 @@ adversarial 모델링 프레임워크는 모델이 다층레이어 퍼셉트론�
 
 다른 말로, D와 G는 value function V(G, D)라는 두 명의 플레이어가 있는 minmax game을 플레이한다.
 
-$$\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(\boldsymbol{x})}[\log D(\boldsymbol{x})]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log (1-D(G(\boldsymbol{z})))]$$
+![Screenshot from 2020-10-05 17-48-54](https://user-images.githubusercontent.com/37301677/95292108-cf94d700-08ab-11eb-9f8e-1220e018b4ca.png)
 
 다음 섹션에서, 우리는 적대적 네트워크의 이론적인 분석을 제시하고, 본질적으로 예를 들어 non-parametric limit과 같이 하나가 G와 D가 충분한 가능성이 주어졌을 때 데이터 생성 분포를 회복하도록 하는 학습 기준을 보여준다. 덜 공식적이지만 접근법에 대한 더 교육적인 설명이 있는 Figure 1을 보자. 실제로, 우리는 iterative 하고 수치적인 접근법으로 game을 구현해야 한다. 학습의 내부 루프에서 D를 최적화하는 것을 끝내는 것은 계산적으로 안 좋고, 그리고 제한된 데이터셋에 대해 오버피팅의 결과가 나올 수 있다. 대신에, 우리는 k 스텝 동안 D를 최적화하고 한번의 step 동안 G를 최적화 하는 것을 번갈아했다. 이 결과로 D는 최적의 솔루션에 가깝게 유지가 되었고, 따라서 G도 충분히 천천히 변화했다. 이 전략은 SML/PCD training이 학습의 내우 루프의 일부에서 Markov chain이 burning 하는 것을 피하기 위해서 한번의 학습 단계에서 다음 학습 단게까지 Markov chain의 샘플을 유지하는 것과 유사하다. 과정은 공식적으로 algorithm 1에 제시되어 있다.  
 
 실제로, 식 1은 G가 학습을 잘 하도록 충분한 그래디언트를 제공하지 못할 수 있다. 학습의 초기애서, G가 안 좋을 때는, D는 샘플들이 학습 데이터와 명확하게 다르기 때문에 높은 자신감을 가지고 샘플들을 거절할 수 있다.  이러한 경우에, $log(1-D(G(z))$ 는 포화된다. G가 $log(1-D(G(z))$ 를 최소화하도록 학습시키는 대신에, 우리는 G가 $logD(G(z))$ 를 최대화하도록 학습시킬 수 있다. 이러한 목적함수는 G와 D의 다이나믹스가 같은 고정점을 만들지만 학습의 초기에서 더 강력한 그래디언트를 제공할 수 있다.
+
+![Screenshot from 2020-10-05 16-48-09](https://user-images.githubusercontent.com/37301677/95292242-0ff45500-08ac-11eb-80c6-06959ba07e23.png)
 
  
 
 # 4. Theoretical Results
 
 생성자 G는 암묵적으로 샘플들의 분포 $G(z)$ 가 $z$~$p_{z}$ 를 다를 때 확률 분포 $p_{g}$ 를 정의한다. 그러므로, 우리는 Algorithm 1이 $p_{data}$ 에 대한 좋은 측정기가 되도록 수렴하도록 한다. 이 섹션의 결과는 non-parametric 셋팅을 통해 수행되었다. (예를 들어, 우리는 확률 밀도 함수의 공간에서 수렴을 연구하여 무한한 능력을 가진 모델을 표현한다.) 
+
+![Screenshot from 2020-10-05 18-25-13](https://user-images.githubusercontent.com/37301677/95292281-239fbb80-08ac-11eb-9e29-fd3e0dfe00ae.png)
 
 ## 4.1 Global Optimality of $p_{g}=p_{\text {data }}$
 
@@ -81,17 +85,19 @@ $$\min _{G} \max _{D} V(D, G)=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}(
 
 G가 고정되었을 때, 최적의 판별자 D는 다음과 같다.
 
-$$D_{G}^{*}(\boldsymbol{x})=\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text {data}}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}$$
+![Screenshot from 2020-10-07 14-49-27](https://user-images.githubusercontent.com/37301677/95292407-5c3f9500-08ac-11eb-97d5-334c653c8c6b.png)
+
+
 
 증명. 어떠안 생성자 G가 주어졌을 때, 판별자 D를 위한 학습 기준은 quantity $V(G,D)$ 를 최대화하는 것이다.
 
-$$\begin{aligned}V(G, D) &=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x})) d x+\int_{z} p_{\boldsymbol{z}}(\boldsymbol{z}) \log (1-D(g(\boldsymbol{z}))) d z \\&=\int_{\boldsymbol{x}} p_{\text {data }}(\boldsymbol{x}) \log (D(\boldsymbol{x}))+p_{g}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) d x\end{aligned}$$
+![Screenshot from 2020-10-07 14-49-37](https://user-images.githubusercontent.com/37301677/95292408-5d70c200-08ac-11eb-9287-3a297391e06f.png)
 
 실수 집합 안의 0이 아닌 어떠한 a,b에 대해서, 함수 $y \rightarrow a \log (y)+b \log (1-y)$ 는 0과 1사이에서 $\frac{a}{a+b}$ 일 때 최대값을 갖는다. 판별자는 $\operatorname{Supp}\left(p_{\text {data }}\right) \cup \operatorname{Supp}\left(p_{g}\right)$ 외부에서 정의할 필요가 없다. 
 
 D를 위한 training 목적함수는 Y가 x가 $p_{data}$ (y=1 일 때) 또는 $p_{g}$ (y=0 일 때) 으로부터 오는 것을 암시할 때, 조건부확률 $P(Y=y \mid \boldsymbol{x})$ 를 추정하는 log-lilkelihood를 최대화하는 것으로 해석될 수 있음에 주목하자. 식 1에서 minmax game은 다음과 같이 재구성될 수 있다.
 
-$$\begin{aligned}C(G) &=\max _{D} V(G, D) \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}}\left[\log \left(1-D_{G}^{*}(G(\boldsymbol{z}))\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right] \\&=\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}\left[\log \frac{p_{\text {data }}(\boldsymbol{x})}{P_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \frac{p_{g}(\boldsymbol{x})}{p_{\text {data }}(\boldsymbol{x})+p_{g}(\boldsymbol{x})}\right]\end{aligned}$$
+![Screenshot from 2020-10-07 14-49-46](https://user-images.githubusercontent.com/37301677/95292410-5d70c200-08ac-11eb-80de-9ca5f7b52ff6.png)
 
 ### Theorem 1.
 
@@ -99,15 +105,15 @@ $$\begin{aligned}C(G) &=\max _{D} V(G, D) \\&=\mathbb{E}_{\boldsymbol{x} \sim p_
 
 증명. $p_{g}=p_{\text {data }}$이기 위해서, $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$가 된다. 그러므로 $D_{G}^{*}(\boldsymbol{x})=\frac{1}{2}$일 때 식4를 조사하면, 우리는 $C(G)=\log \frac{1}{2}+\log \frac{1}{2}=-\log 4$ 임을 발견할 수 있다. 이것이 $C(G)$ 에 대한 가장 가능한 값을 보기 위해서, $p_{g}=p_{\text {data }}$ 일 때만 살펴본다.
 
-$$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {data }}}[-\log 2]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}[-\log 2]=-\log 4$$
+![Screenshot from 2020-10-07 14-51-19](https://user-images.githubusercontent.com/37301677/95292545-9e68d680-08ac-11eb-9a67-b9898c943e4b.png)
 
 임을 관찰하고, 이 식을 $C(G)=V\left(D_{G}^{*}, G\right)$ 으로부터 뺄 때, 우리는 다음과 같은 식을 얻을 수 있다.
 
-$$C(G)=-\log (4)+K L\left(p_{\text {data }} \| \frac{p_{\text {data }}+p_{g}}{2}\right)+K L\left(p_{g} \| \frac{p_{\text {data }}+p_{g}}{2}\right)$$
+![Screenshot from 2020-10-07 14-51-26](https://user-images.githubusercontent.com/37301677/95292547-9f016d00-08ac-11eb-8b1c-7fdca18b3a7b.png)
 
 KL은 Kullback-Leibler divergence 이다. 우리는 이전의 표현에서 Jensen-Shannon divergence를 발견했다.
 
-$$C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$$
+![Screenshot from 2020-10-07 14-51-34](https://user-images.githubusercontent.com/37301677/95292549-9f9a0380-08ac-11eb-8f2e-9fcb0f587a22.png)
 
 두 분포 사이의 Jensen-Shannon divergence는 항상 음수가 아니고 분포가 같을 때만 0이기 때문에, 우리는 오직 해가 $p_{g}=p_{\text {data }}$일 때 $C^{*}=-\log (4)$ 는 $C(G)$ 의 글로벌 최저점이라는 것을 보일 수 잇다. 즉, 생성 모델은 데이터 생성 프로세스를 완벽하게 복제할 수 있다.
 
@@ -117,7 +123,7 @@ $$C(G)=-\log (4)+2 \cdot J S D\left(p_{\text {data }} \| p_{g}\right)$$
 
 만약 G와 D가 충분한 용량을 가지고 있다면, 그리고 Algorithm 1의 각각의 step에서, 판별자는 주어진 G에 대해서 최적점을 도달 할 수 있고, $p_{g}$ 도 향상된 기준에 대해서 업데이트 될 수 있다.
 
-$$\mathbb{E}_{\boldsymbol{x} \sim p_{\text {dala}}}\left[\log D_{G}^{*}(\boldsymbol{x})\right]+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left[\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right]$$
+![Screenshot from 2020-10-07 14-52-35](https://user-images.githubusercontent.com/37301677/95292605-be989580-08ac-11eb-8a7b-00d9023ffc9c.png)
 
 그리고나서 $p_{g}$ 는 $p_{data}$ 로 수렴된다.
 
