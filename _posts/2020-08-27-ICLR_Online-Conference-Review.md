@@ -13,6 +13,8 @@ tags: [Conference]
 
 
 
+> <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fconference%2F2020%2F08%2F27%2FICLR_Online-Conference-Review.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+>
 > 안녕하세요. 이번 포스팅은 전세계적인 COVID-19 사태로 인해, 현장에서 직접 발표하고 참가하는 학회가 아니라 온라인 발표 및 질문으로 변경이 된,  ICLR 2020 학회 참가 후기 입니다.
 
 <br>
