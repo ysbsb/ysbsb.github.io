@@ -9,11 +9,7 @@ comments: true
 
 
 
-```
 ![HitCount](http://hits.dwyl.com/ysbsb.github.io/2020/06/17/GAN-newbie-guide.html.svg)
-```
-
-
 
 
 
