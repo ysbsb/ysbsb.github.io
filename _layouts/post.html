@@ -10,13 +10,6 @@ layout: default
       {% if page.author %} - {{ page.author }}{% endif %}
     </p>
   </header>
-   <div style="text-align: center;">
-    <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
-      target="_blank">
-      <img
-        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
-    </a>
-  </div>
   <section class="post-content">{{ content }}</section>
   {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
 </article>
