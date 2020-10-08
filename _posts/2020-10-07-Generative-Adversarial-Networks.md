@@ -11,7 +11,9 @@ use_math: true
 
 
 
+<div align=center>
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F10%2F07%2FGenerative-Adversarial-Networks.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)</div>
 
 
 
