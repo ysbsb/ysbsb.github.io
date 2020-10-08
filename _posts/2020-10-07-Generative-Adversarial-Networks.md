@@ -11,11 +11,11 @@ use_math: true
 
 
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F10%2F07%2FGenerative-Adversarial-Networks.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-
-안녕하세요. 모카의 머신러닝 입니다. 이번 포스팅은 GAN의 시초가 되는 Ian Goodfellow의 Generative Adversarial Networks 논문에 대해 리뷰합니다. 영어로 된 논문을 한글로 같이 해석하며 논문에서 의미하는 것이 무엇인지 같이 공부하며 이해하고 활용하실 수 있도록 준비해보았습니다. 
 
 
+
+
+> 안녕하세요. 모카의 머신러닝 입니다. 이번 포스팅은 GAN의 시초가 되는 Ian Goodfellow의 Generative Adversarial Networks 논문에 대해 리뷰합니다. 영어로 된 논문을 한글로 같이 해석하며 논문에서 의미하는 것이 무엇인지 같이 공부하며 이해하고 활용하실 수 있도록 준비해보았습니다. 
 
 <br>
 
