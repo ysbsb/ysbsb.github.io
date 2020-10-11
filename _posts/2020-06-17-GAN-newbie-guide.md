@@ -9,10 +9,10 @@ comments: true
 
 
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F06%2F17%2FGAN-newbie-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
-
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F06%2F17%2FGAN-newbie-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
 > 이번 포스팅에서는 GAN의 개념, GAN의 종류, 주요 논문들에 대한 짧은 리뷰를 이야기하려고 합니다. GAN의 종류들은 중요하게 언급되는 모델들을 선정하였고, 이 모델들에 대해서 간단히 설명을 듣고 활용하실 수 있도록 리뷰도 같이 준비해보았습니다. 
 
 <br>
