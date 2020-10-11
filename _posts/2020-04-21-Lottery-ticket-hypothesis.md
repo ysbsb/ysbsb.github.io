@@ -8,9 +8,17 @@ categories: pruning
 comments: true
 ---
 
-<strong><em>The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks, Jonathan Frankle et al, ICLR 2019</em></strong>
 
-[Paper](https://arxiv.org/pdf/1803.03635.pdf)
+
+
+
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fpruning%2F2020%2F04%2F21%2FLottery-ticket-hypothesis.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+> <strong><em>The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks, Jonathan Frankle et al, ICLR 2019</em></strong>
+>
+> [Paper](https://arxiv.org/pdf/1803.03635.pdf)
+
+
 
 <br>
 

@@ -13,6 +13,8 @@ tags: [Linux]
 
 
 
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Flinux%2F2020%2F08%2F18%2FLinux-ffmpeg.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
 > 리눅스 생활일지편 입니다.
 >
 > 이번 포스팅에서는 우분투에서 ffmpeg 설치하는 방법에 대해 이야기합니다.

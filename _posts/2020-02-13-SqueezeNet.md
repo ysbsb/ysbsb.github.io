@@ -9,9 +9,15 @@ tags: [CNN]
 comments: true
 ---
 
-<strong><em>SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size, Forreset N. landola et al, ICLR2017</em></strong>
 
-[Paper](https://arxiv.org/abs/1602.07360)
+
+
+
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fcnn%2F2020%2F02%2F13%2FSqueezeNet.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+> <strong><em>SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size, Forreset N. landola et al, ICLR2017</em></strong>
+>
+> [Paper](https://arxiv.org/abs/1602.07360)
 
 <br>
 

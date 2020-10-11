@@ -10,9 +10,19 @@ tags: [CNN]
 comments: true
 ---
 
-<strong><em>MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications, Andrew G. Howard et al</em></strong>
 
-[Paper](https://arxiv.org/abs/1704.04861)
+
+
+
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fcnn%2F2020%2F02%2F20%2FMobileNet.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+> <strong><em>MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications, Andrew G. Howard et al</em></strong>
+>
+> [Paper](https://arxiv.org/abs/1704.04861)
+
+
+
+
 
 <br>
 

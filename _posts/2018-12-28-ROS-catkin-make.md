@@ -6,7 +6,16 @@ date:   2018-12-28 00:28:05
 author: Subin Yang
 categories: ROS
 comments: true
+
 ---
+
+
+
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fros%2F2018%2F12%2F28%2FROS-catkin-make.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+> ROS 파일 빌드를 위한 catkin make에 대해 포스팅 합니다.
+
+
 
 <h2>ROS 파일 빌드하기</h2>
 <em>catkin_make</em>는 cmake의 ROS 버전이라고 볼 수 있습니다.
