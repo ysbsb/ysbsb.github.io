@@ -9,6 +9,8 @@ use_math : true
 
 ---
 
+>  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Freinforcement_learning%2F2019%2F07%2F16%2FPolicy-Gradient-REINFORCE-Actor-Critic-A2C-A3C.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
 >  Policy gradient 계열의 강화학습인 actor-critic 에 대해서 알아보고자 합니다. Actor는 policy를 학습하여 action을 알아내는 네트워크이며, Critic은 state의 value를 알아내는 네트워크 입니다. Monter-Carlo 기반의 REINFORCE 부터 시작하여, 이에 actor-critic을 기반으로 advantage function을 도입한 A2C, 비동기적인 asynchronous한 방법으로 A3C 방법을 살펴보도록 하겠습니다.
 
 REINFORCE
