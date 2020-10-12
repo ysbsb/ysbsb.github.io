@@ -9,6 +9,8 @@ Machine Learning Researcher who likes coffee.
 
 I am doing research on fundamental machine learning and deep learning application for vision and real world.
 
+Now interest: computer vision, model compression, reinforcement learning
+
 [Profile](https://www.notion.so/Subin-43175f6d5c00478699eb8bc99eafd4e9)
 
 [Projects](https://www.notion.so/Projects-3de5e892e6e84942b1611650b9db9e9c)
