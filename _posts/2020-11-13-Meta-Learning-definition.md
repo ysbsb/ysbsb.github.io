@@ -6,6 +6,7 @@ date:   2020-11-13 23:55:55
 author: Subin Yang
 category: [Meta_Learning]
 tags: [Meta_Learning]
+comments: true
 ---
 
 
@@ -83,6 +84,16 @@ tags: [Meta_Learning]
 
 
 
+<br>
+
+------------------
+
+
+
+
+
+
+
 <h1>연구 분야</h1>
 
 
@@ -91,7 +102,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-
+<br>
 
 <h2>어떻게 우리는 에이전트가 실제 환경에서 스킬을 배우도록 할 수 있을까?</h2>
 
@@ -125,7 +136,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 가 필요하기 때문입니다.
 
- 
+ <br>
 
 <h2>박사 처음 시절</h2>
 
@@ -163,7 +174,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-
+<br>
 
 <h2>한 가지를 학습 하는 일</h2>
 
@@ -301,7 +312,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-
+<br>
 
 
 
@@ -327,6 +338,8 @@ beyond the robots and general-purpose ML systems
 
 
 
+<br>
+
 
 
 <h3>가지고 있는 데이터가 long tail (아래 그래프와 같은 모습)이면 어떨까요?</h3>
@@ -345,6 +358,10 @@ beyond the robots and general-purpose ML systems
 
 
 
+<br>
+
+
+
 <h3>새로운 것을 빨리 배울 필요가 있으면 어떨까요?</h3>
 
 
@@ -355,7 +372,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-
+<br>
 
 
 
@@ -393,7 +410,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-
+<br>
 
 
 
@@ -446,7 +463,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-
+<br>
 
 
 
@@ -491,7 +508,7 @@ task들이 연관되지 않아 보일지라도
 
 
 
-
+<br>
 
 
 
@@ -505,6 +522,8 @@ task들이 연관되지 않아 보일지라도
 
 
 
+<br>
+
 
 
 <h3>멀티 태스킹 러닝 문제</h3>
@@ -516,6 +535,8 @@ task들이 연관되지 않아 보일지라도
 모든 task들을 각각 독립적으로 학습하는 것 보다 더 빨리 또는 더 효율적으로 학습합니다.
 
 
+
+<br>
 
 
 
@@ -535,7 +556,7 @@ task들이 연관되지 않아 보일지라도
 
 
 
-
+<br>
 
 
 
@@ -599,7 +620,7 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 
-
+<br>
 
 
 
