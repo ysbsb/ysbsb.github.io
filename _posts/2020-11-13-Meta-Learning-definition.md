@@ -1,11 +1,17 @@
 ---
+
 layout: post
 title: [CS330-Stanford-Meta-Learning] 메타러닝(Meta Learning)이란? 메타러닝 문제 정의와 설명, 적용
 subtitle: [CS330-Stanford-Meta-Learning] Meta Learning problem definitions and applications
-category: Meta_Learning
-tags: Meta_Learning
+date:   2020-11-13 23:55:55
+author: Subin Yang
+category: [Meta_Learning]
+tags: [Meta_Learning]
 comments: true
+
 ---
+
+
 
 
 
@@ -93,17 +99,29 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<h2>어떻게 우리는 에이전트가 실제 환경에서 스킬을 배우도록 할 수 있을까?
+<h2>어떻게 우리는 에이전트가 실제 환경에서 스킬을 배우도록 할 수 있을까?</h2>
 
 
 
 교수님은 다음과 같이 로봇에 대한 여러 연구들을 하셨습니다. 
 
+
+
+
+
 ![Screenshot from 2020-11-13 16-56-00](https://user-images.githubusercontent.com/37301677/99043107-33a86a80-25d1-11eb-8245-c1509e8ffb03.png)
 
 
 
-왜 로봇인가? 로봇은 지능에 대한 것들을 우리에게 가르쳐준다! 그리고 아래와 같은 이유들이 있습니다.
+
+
+
+
+왜 로봇인가? 
+
+
+
+로봇은 지능에 대한 것들을 우리에게 가르쳐준다! 그리고 아래와 같은 이유들이 있습니다.
 
 로봇은
 
@@ -121,13 +139,29 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 처음에 로봇은 눈이 없는 상태로 비행기 장난감을 조립하는 문제에 대해 학습했다고 합니다.
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043291-79653300-25d1-11eb-8eaa-a91e602951d8.png" alt="Screenshot from 2020-11-13 16-58-03" style="zoom: 33%;" />
+
+
+
+
 
 나중에 눈이 필요한 비전 문제에 관심이 가게 되었다고 합니다.
 
 동그라미, 네모 모양의 교구를 조립하는 일, 텀블러 뚜겅을 닫는일, 물건을 옮기는 일 등 입니다.
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043293-7a966000-25d1-11eb-9992-d4ec11a44ea4.png" alt="Screenshot from 2020-11-13 16-58-15" style="zoom: 33%;" />
+
+
+
+
 
 
 
@@ -141,7 +175,11 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
+
+
 ![Screenshot from 2020-11-13 17-00-02](https://user-images.githubusercontent.com/37301677/99043531-baf5de00-25d1-11eb-8be0-3e8efed51134.png)
+
+
 
 
 
@@ -149,7 +187,13 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043533-bcbfa180-25d1-11eb-8850-015529fa9686.png" alt="Screenshot from 2020-11-13 17-00-15" style="zoom:33%;" />
+
+
+
+
 
 하지만 예전에 동료가 로봇이 하키를 하는 문제를 학습하기 위해, 로봇이 퍽을 한번 칠 때 사람이 다시 퍽을 원 위치로 되돌리면서, 자신이 더 많이 움직인 일화를 말해주면서 이러한 방법은 효율적이지는 않다고 설명합니다.
 
@@ -163,9 +207,21 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 이것은 강화학습과 로보틱스 문제에 국한되는 일은 아닙니다.
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043713-f7c1d500-25d1-11eb-8585-a77f6f814be6.png" alt="Screenshot from 2020-11-13 17-01-40" style="zoom: 33%;" />
 
+
+
+
+
 Machine translation, speech recognition, object detection 과 같이 다양한 문제들이 아직도 하나의 문제를 시작부터 디테일한 감독과 함께 학습된다고 합니다.
+
+
+
+
 
 
 
@@ -173,7 +229,15 @@ Machine translation, speech recognition, object detection 과 같이 다양한 �
 
 
 
+
+
+
+
 하지만 사람은 제네럴리스트 입니다!
+
+
+
+
 
 
 
@@ -201,6 +265,10 @@ beyond the robots and general-purpose ML systems
 
 현대의 컴퓨터 비전: end-to-end 학습
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043885-3b1c4380-25d2-11eb-9a48-fc0de1221a09.png" alt="Screenshot from 2020-11-13 17-03-22" style="zoom:33%;" />
 
 
@@ -215,6 +283,10 @@ beyond the robots and general-purpose ML systems
 
 객체 인식을 위한 딥러닝 예시
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99043890-3c4d7080-25d2-11eb-94fd-f8aa2d520a0e.png" alt="Screenshot from 2020-11-13 17-03-46" style="zoom:33%;" />
 
 
@@ -222,6 +294,10 @@ beyond the robots and general-purpose ML systems
 
 
 머신 번역을 위한 딥러닝 예시
+
+
+
+
 
 <img src="https://user-images.githubusercontent.com/37301677/99043891-3ce60700-25d2-11eb-998b-b6003936c266.png" alt="Screenshot from 2020-11-13 17-03-53" style="zoom:33%;" />
 
@@ -237,21 +313,47 @@ beyond the robots and general-purpose ML systems
 
 
 
+
+
 <h3>큰 데이터셋을 가지고 있지 않으면 어떨까요?</h3>
+
+
+
+
 
 <img src="https://user-images.githubusercontent.com/37301677/99044016-70c12c80-25d2-11eb-951f-221f967d94d6.png" alt="Screenshot from 2020-11-13 17-05-05" style="zoom:33%;" />
 
+
+
+
+
 -> 각각의 질병, 각각의 로봇, 각각의 사람, 각각의 언어, 각각의 task를 위해 처음부터 스크래치로 학습하는 것은 실용적이지 않다.
+
+
+
+
 
 <h3>가지고 있는 데이터가 long tail (아래 그래프와 같은 모습)이면 어떨까요?</h3>
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99044020-71f25980-25d2-11eb-8bda-92d897159ac2.png" alt="Screenshot from 2020-11-13 17-05-13" style="zoom:50%;" />
+
+
+
+
 
 -> 이런 셋팅은 기존의 머신러닝의 패러다임을 부쉰다.
 
 
 
 <h3>새로운 것을 빨리 배울 필요가 있으면 어떨까요?</h3>
+
+
+
+
 
 -> 새로운 사람, 새로운 일이나, 새로운 환경 등에 대해서
 
@@ -267,13 +369,29 @@ beyond the robots and general-purpose ML systems
 
 test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 Cezanne의 그림이라고 생각하시나요?
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99044420-170d3200-25d3-11eb-83fa-b3e1cec2ec33.png" alt="Screenshot from 2020-11-13 17-10-06" style="zoom: 33%;" />
+
+
+
+
 
 
 
 이렇게 적은 수의 그림 (training data)만 보고 test datapoint를 예측하는 것이 few-shot learning 이라고 합니다.
 
+
+
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99044422-17a5c880-25d3-11eb-81e6-afc27018fc2b.png" alt="Screenshot from 2020-11-13 17-09-38" style="zoom:50%;" />
+
+
+
+
 
 이것을 어떻게 수행할 수 있을까요? 사전 지식을 활용하면서 할 수 있습니다!
 
@@ -290,14 +408,17 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 - 일반적인 목적의 AI 시스템을 원하면 어떨까?
-
 - 큰 데이터셋을 가지고 있지 않으면 어떨까?
-
 - 데이터가 long tail을 가지고 있으면 어떨까?
-
 - 새로운 것을 빨리 배워야 한다면 어떨까?
 
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99044671-79fec900-25d3-11eb-86fb-4f028b4ba176.png" alt="Screenshot from 2020-11-13 17-12-48" style="zoom:33%;" />
+
+
+
+
 
 
 
@@ -316,6 +437,10 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 이제부터 task는 데이터셋과 loss function 이 주어졌을 때 최적의 모델을 찾는 것이라고 합니다.
+
+
+
+
 
 <img src="https://user-images.githubusercontent.com/37301677/99047247-4887fc80-25d7-11eb-94dc-c2a65f9487fe.png" alt="Screenshot from 2020-11-13 17-39-05" style="zoom:33%;" />
 
@@ -345,7 +470,13 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 구조를 공유하는 많은 task들이 있습니다!
 
+
+
 ![Screenshot from 2020-11-13 17-39-14](https://user-images.githubusercontent.com/37301677/99047251-49b92980-25d7-11eb-9cd9-7cd963f1d595.png)
+
+
+
+
 
 
 
@@ -374,15 +505,29 @@ task들이 연관되지 않아 보일지라도
 
 
 
+
+
 <h3>멀티 태스킹 러닝 문제</h3>
+
+
+
+
 
 모든 task들을 각각 독립적으로 학습하는 것 보다 더 빨리 또는 더 효율적으로 학습합니다.
 
 
 
+
+
 <h3>메타 러닝 문제</h3>
 
+
+
+
+
 이전 task들에 대한 데이터나 경험이 주어졌을 때, 새로운 task를 더 빨리 그리고/또는 더 효율적으로 학습합니다.
+
+
 
 
 
@@ -392,7 +537,11 @@ task들이 연관되지 않아 보일지라도
 
 
 
+
+
 <h2>멀티 태스크 러닝을 싱글 태스크 러닝으로 줄일 수 있을까?</h2>
+
+
 
 
 
@@ -414,9 +563,15 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 
+
+
 멀티 태스크 러닝과 메타 러닝은 사실상 머신러닝 연구분야에서 이전부터 지속되어 근본적인 역할을 하는 알고리즘 입니다.
 
+
+
 <img src="https://user-images.githubusercontent.com/37301677/99047254-4a51c000-25d7-11eb-98c4-08d3a631184d.png" alt="Screenshot from 2020-11-13 17-39-29" style="zoom:50%;" />
+
+
 
 
 
@@ -435,6 +590,8 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 ![Screenshot from 2020-11-13 17-39-51](https://user-images.githubusercontent.com/37301677/99047259-4b82ed00-25d7-11eb-89c6-73f7e34ffdca.png)
+
+
 
 
 
@@ -462,6 +619,8 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 
+
+
 <br>
 
 
@@ -471,3 +630,4 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 여기까지 Stanford Chelsea Finn 교수님의 Deep Multi-Task and Meta Learning 강의 Lecture 1에 대한 리뷰와 정리에 대한 설명을 해보았습니다. 질문이나 지적, 요청해주실 부분이 있다면  댓글이나 메일 부탁드립니다.
 
 읽어주셔서 감사합니다. 😃
+
