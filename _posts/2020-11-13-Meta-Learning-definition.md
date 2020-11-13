@@ -14,21 +14,17 @@ tags: [Meta_Learning]
 
 
 
-> 
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fmeta_learning%2F2020%2F11%2F13%2FMeta-Learning-definition.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 >
 > 안녕하세요 모카의 머신러닝 입니다. 이번 포스팅에서는 Stanford Chelsea Finn 교수님의 Deep Multi-Task and Meta Learning 강의 Lecture 1에 대한 리뷰와 정리에 대해서 이야기 합니다.
 >
-> lecture website
->
-> http://cs330.stanford.edu/fall2019/index.html
->
-> lecture slide
->
-> http://cs330.stanford.edu/fall2019/slides/cs330_lecture1.pdf
->
-> lecture video
->
-> 
+> [lecture website](http://cs330.stanford.edu/fall2019/index.html)    [lecture slide](http://cs330.stanford.edu/fall2019/slides/cs330_lecture1.pdf)
+
+
+
+
+
+
 
 <br>
 
@@ -38,7 +34,7 @@ tags: [Meta_Learning]
 
 
 
-# Deep Multi-Task and Meta-Learning
+<h1>Deep Multi-Task and Meta-Learning</h1>
 
 
 
@@ -60,7 +56,8 @@ tags: [Meta_Learning]
 
 
 
-<h2>다루지 않을 주제들
+<h2>다루지 않을 주제들</h2>
+
 
 강의의 시간 관계상 모든 분야를 다 커버할 수가 없어서, Auto ML topics를 커버하지 않는다고 합니다.
 
@@ -236,7 +233,9 @@ Machine translation, speech recognition, object detection 과 같이 다양한 �
 
 
 
+<br>
 
+------------------
 
 
 
@@ -425,6 +424,10 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
+<br>
+
+------------------
+
 
 
 
@@ -553,6 +556,10 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 다른 task들로부터 데이터가 올 것을 알고 있다. 싱글 태스크 러닝을 할 수 도 있지만 멀티 태스크 러닝을 해야할 필요가 있다는 의미이다.
 
 
+
+<br>
+
+------------------
 
 
 
