@@ -1,14 +1,11 @@
 ---
-
 layout: post
-title: [CS330-Stanford-Meta-Learning] 메타러닝(Meta Learning)이란? 메타러닝 문제 정의와 설명, 적용
-subtitle: [CS330-Stanford-Meta-Learning] Meta Learning problem definitions and applications
+title: CS330-Stanford-Meta-Learning - 메타러닝(Meta Learning)이란? 메타러닝 문제 정의와 설명, 적용
+subtitle: CS330-Stanford-Meta-Learning - Meta Learning problem definitions and applications
 date:   2020-11-13 23:55:55
 author: Subin Yang
 category: [Meta_Learning]
 tags: [Meta_Learning]
-comments: true
-
 ---
 
 
