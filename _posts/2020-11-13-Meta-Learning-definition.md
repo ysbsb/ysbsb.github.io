@@ -148,7 +148,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043291-79653300-25d1-11eb-8eaa-a91e602951d8.png" alt="Screenshot from 2020-11-13 16-58-03" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043291-79653300-25d1-11eb-8eaa-a91e602951d8.png" alt="Screenshot from 2020-11-13 16-58-03"  />
 
 
 
@@ -162,7 +162,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043293-7a966000-25d1-11eb-9992-d4ec11a44ea4.png" alt="Screenshot from 2020-11-13 16-58-15" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043293-7a966000-25d1-11eb-9992-d4ec11a44ea4.png" alt="Screenshot from 2020-11-13 16-58-15"  />
 
 
 
@@ -170,7 +170,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043294-7b2ef680-25d1-11eb-8c27-e72ab90d8d1d.png" alt="Screenshot from 2020-11-13 16-58-27" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043294-7b2ef680-25d1-11eb-8c27-e72ab90d8d1d.png" alt="Screenshot from 2020-11-13 16-58-27"  />
 
 
 
@@ -194,7 +194,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043533-bcbfa180-25d1-11eb-8850-015529fa9686.png" alt="Screenshot from 2020-11-13 17-00-15" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043533-bcbfa180-25d1-11eb-8850-015529fa9686.png" alt="Screenshot from 2020-11-13 17-00-15"  />
 
 
 
@@ -216,7 +216,7 @@ Chelsea Finn 교수님의 연구 분야와, 왜 multi-task learning과 meta-lear
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043713-f7c1d500-25d1-11eb-8585-a77f6f814be6.png" alt="Screenshot from 2020-11-13 17-01-40" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043713-f7c1d500-25d1-11eb-8585-a77f6f814be6.png" alt="Screenshot from 2020-11-13 17-01-40"  />
 
 
 
@@ -230,7 +230,7 @@ Machine translation, speech recognition, object detection 과 같이 다양한 �
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043719-f8f30200-25d1-11eb-8b36-52c122b01968.png" alt="Screenshot from 2020-11-13 17-01-57" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043719-f8f30200-25d1-11eb-8b36-52c122b01968.png" alt="Screenshot from 2020-11-13 17-01-57"  />
 
 
 
@@ -276,7 +276,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043885-3b1c4380-25d2-11eb-9a48-fc0de1221a09.png" alt="Screenshot from 2020-11-13 17-03-22" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043885-3b1c4380-25d2-11eb-9a48-fc0de1221a09.png" alt="Screenshot from 2020-11-13 17-03-22"  />
 
 
 
@@ -294,7 +294,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043890-3c4d7080-25d2-11eb-94fd-f8aa2d520a0e.png" alt="Screenshot from 2020-11-13 17-03-46" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043890-3c4d7080-25d2-11eb-94fd-f8aa2d520a0e.png" alt="Screenshot from 2020-11-13 17-03-46" style="zoom:80%;" />
 
 
 
@@ -306,7 +306,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99043891-3ce60700-25d2-11eb-998b-b6003936c266.png" alt="Screenshot from 2020-11-13 17-03-53" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99043891-3ce60700-25d2-11eb-998b-b6003936c266.png" alt="Screenshot from 2020-11-13 17-03-53" style="zoom: 80%;" />
 
 
 
@@ -328,7 +328,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99044016-70c12c80-25d2-11eb-951f-221f967d94d6.png" alt="Screenshot from 2020-11-13 17-05-05" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99044016-70c12c80-25d2-11eb-951f-221f967d94d6.png" alt="Screenshot from 2020-11-13 17-05-05" style="zoom: 80%;" />
 
 
 
@@ -348,7 +348,7 @@ beyond the robots and general-purpose ML systems
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99044020-71f25980-25d2-11eb-8bda-92d897159ac2.png" alt="Screenshot from 2020-11-13 17-05-13" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99044020-71f25980-25d2-11eb-8bda-92d897159ac2.png" alt="Screenshot from 2020-11-13 17-05-13" style="zoom: 80%;" />
 
 
 
@@ -386,7 +386,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99044420-170d3200-25d3-11eb-83fa-b3e1cec2ec33.png" alt="Screenshot from 2020-11-13 17-10-06" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99044420-170d3200-25d3-11eb-83fa-b3e1cec2ec33.png" alt="Screenshot from 2020-11-13 17-10-06"  />
 
 
 
@@ -400,7 +400,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99044422-17a5c880-25d3-11eb-81e6-afc27018fc2b.png" alt="Screenshot from 2020-11-13 17-09-38" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99044422-17a5c880-25d3-11eb-81e6-afc27018fc2b.png" alt="Screenshot from 2020-11-13 17-09-38" style="zoom: 80%;" />
 
 
 
@@ -427,7 +427,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99044671-79fec900-25d3-11eb-86fb-4f028b4ba176.png" alt="Screenshot from 2020-11-13 17-12-48" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99044671-79fec900-25d3-11eb-86fb-4f028b4ba176.png" alt="Screenshot from 2020-11-13 17-12-48"  />
 
 
 
@@ -459,7 +459,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99047247-4887fc80-25d7-11eb-94dc-c2a65f9487fe.png" alt="Screenshot from 2020-11-13 17-39-05" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99047247-4887fc80-25d7-11eb-94dc-c2a65f9487fe.png" alt="Screenshot from 2020-11-13 17-39-05" style="zoom: 80%;" />
 
 
 
@@ -489,7 +489,7 @@ test datapoint에 있는 그림이 Braque의 그림이라고 생각하시나요 
 
 
 
-![Screenshot from 2020-11-13 17-39-14](https://user-images.githubusercontent.com/37301677/99047251-49b92980-25d7-11eb-9cd9-7cd963f1d595.png)
+<img src="https://user-images.githubusercontent.com/37301677/99047251-49b92980-25d7-11eb-9cd9-7cd963f1d595.png" alt="Screenshot from 2020-11-13 17-39-14"  />
 
 
 
@@ -594,13 +594,13 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99047254-4a51c000-25d7-11eb-98c4-08d3a631184d.png" alt="Screenshot from 2020-11-13 17-39-29" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99047254-4a51c000-25d7-11eb-98c4-08d3a631184d.png" alt="Screenshot from 2020-11-13 17-39-29"  />
 
 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99047257-4aea5680-25d7-11eb-8e8e-fe3fc1a34ba1.png" alt="Screenshot from 2020-11-13 17-39-40" style="zoom:50%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99047257-4aea5680-25d7-11eb-8e8e-fe3fc1a34ba1.png" alt="Screenshot from 2020-11-13 17-39-40"  />
 
 
 
@@ -638,7 +638,7 @@ task들 간에 데이터를 aggregating 하거나 단일 모델을 학습하는 
 
 
 
-<img src="https://user-images.githubusercontent.com/37301677/99047260-4b82ed00-25d7-11eb-9541-5c23cc9184d6.png" alt="Screenshot from 2020-11-13 17-40-00" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/37301677/99047260-4b82ed00-25d7-11eb-9541-5c23cc9184d6.png" alt="Screenshot from 2020-11-13 17-40-00"  />
 
 
 
