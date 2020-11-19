@@ -15,8 +15,6 @@ comments: true
 
 
 
-> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fmeta_learning%2F2020%2F11%2F13%2FMeta-Learning-definition.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
->
 > 안녕하세요 모카의 머신러닝 입니다. 이번 포스팅에서는 Stanford Chelsea Finn 교수님의 Deep Multi-Task and Meta Learning 강의 Lecture 1에 대한 리뷰와 정리에 대해서 이야기 합니다.
 >
 > [   [lecture website ]  ](http://cs330.stanford.edu/fall2019/index.html)    [    [lecture slide ]   ](http://cs330.stanford.edu/fall2019/slides/cs330_lecture1.pdf)
