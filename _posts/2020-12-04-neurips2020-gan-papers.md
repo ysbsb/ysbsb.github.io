@@ -4,8 +4,8 @@ title: NIPS 2020 GAN Accepted Papers GAN 논문 리스트
 subtitle: NIPS 2020 GAN Accepted Papers
 date:   2020-12-04 14:56:56
 author: Subin Yang
-category: [gan]
-tags: [gan]
+category: [GAN]
+tags: [GAN]
 
 ---
 
