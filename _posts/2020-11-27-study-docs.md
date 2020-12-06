@@ -25,21 +25,21 @@ tags: [docs]
 
 <h2>머신러닝 강의 자료 리스트</h2>
 
-| Lecture                                                      | Website                                                      | Video                                                        | Category                    |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------- |
-| Stanford CS229 Machine Learining                             | [site](http://cs229.stanford.edu/)                           | [video](https://www.youtube.com/watch?v=jGwO_UgTS7I)         | Machine Learning            |
-| Stanford CS231n Convolutional Neural Networks for Visual Recognition | [site](http://cs231n.stanford.edu/)                          | [video](https://www.youtube.com/watch?v=vT1JzLTH4G4)         | Computer  Vision            |
-| Stanford CS224n Natural Language Processing with Deep Learning | [site](http://web.stanford.edu/class/cs224n/)                | [video](https://www.youtube.com/watch?v=8rXD5-xhemo)         | Natural Language Processing |
-| UC Berkeley CS294-158 Deep Unsupervised Learning             | [site](https://sites.google.com/view/berkeley-cs294-158-sp20/home) | [video](https://www.youtube.com/watch?v=V9Roouqfu-M&feature=youtu.be) | Unsupervised Learning       |
-| David Silver's Reinforcement Learning                        | [site](https://www.davidsilver.uk/teaching/)                 | [video](https://www.youtube.com/watch?v=2pWv7GOvuf0)         | Reinforcement Learning      |
-| UC Berkeley CS285 Deep Reinforcement Learning                | [site](http://rail.eecs.berkeley.edu/deeprlcourse/)          | [video](https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc) | Deep Reinforcement Learning |
-| Stanford CS330 Deep Multi-Task and Meta Learning             | [site](https://cs330.stanford.edu/)                          | [video](https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5) | Meta Learning               |
-| UC Berkeley CS287 Advanced Robotics                          | [site](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/) | [video](https://www.youtube.com/watch?v=xWPViQ6LI-Q)         | Robotics                    |
-| Full Stack Deep Learning                                     | [site](https://fullstackdeeplearning.com/)                   |                                                              |                             |
+| Lecture                                                      | Category                    |
+| ------------------------------------------------------------ | --------------------------- |
+| Stanford CS229 Machine Learining  [site](http://cs229.stanford.edu/)  [video](https://www.youtube.com/watch?v=jGwO_UgTS7I) | Machine Learning            |
+| Stanford CS231n Convolutional Neural Networks for Visual Recognition  [site](http://cs231n.stanford.edu/)  [video](https://www.youtube.com/watch?v=vT1JzLTH4G4) | Computer  Vision            |
+| Stanford CS224n Natural Language Processing with Deep Learning  [site](http://web.stanford.edu/class/cs224n/)  [video](https://www.youtube.com/watch?v=8rXD5-xhemo) | Natural Language Processing |
+| UC Berkeley CS294-158 Deep Unsupervised Learning  [site](https://sites.google.com/view/berkeley-cs294-158-sp20/home)  [video](https://www.youtube.com/watch?v=V9Roouqfu-M&feature=youtu.be) | Unsupervised Learning       |
+| David Silver's Reinforcement Learning  [site](https://www.davidsilver.uk/teaching/)  [video](https://www.youtube.com/watch?v=2pWv7GOvuf0) | Reinforcement Learning      |
+| UC Berkeley CS285 Deep Reinforcement Learning  [site](http://rail.eecs.berkeley.edu/deeprlcourse/)  [video](https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc) | Deep Reinforcement Learning |
+| Stanford CS330 Deep Multi-Task and Meta Learning  [site](https://cs330.stanford.edu/)  [video](https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5) | Meta Learning               |
+| UC Berkeley CS287 Advanced Robotics  [site ](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/)  [video](https://www.youtube.com/watch?v=xWPViQ6LI-Q) | Robotics                    |
+| Full Stack Deep Learning  [site](https://fullstackdeeplearning.com/) | Deep Learning               |
 
 
 
-
+<br>
 
 
 
