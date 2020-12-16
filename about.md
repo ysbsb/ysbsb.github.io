@@ -21,3 +21,5 @@ Now interest: computer vision, model compression, reinforcement learning
 
 [google scholar](https://scholar.google.co.kr/citations?user=PqxbbQwAAAAJ&hl=ko)
 
+[한글 프로필 데모](https://www.notion.so/Subin-Yang-Personal-Profile-38627b17d43a4c2bb6db8e4ba8e01315)  (<em>Updated 2020.12.17.</em>)
+
