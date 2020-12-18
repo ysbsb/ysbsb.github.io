@@ -21,7 +21,7 @@ Now interest: computer vision, model compression, reinforcement learning
 
 - SGDMix <em>(Expected to release)</em>
 
-- ReXNet-PyTorch Github <em>(Released 2020.12.18.)</em>
+- [ReXNet-PyTorch Github](https://github.com/ysbsb/ReXNet-PyTorch) <em> (Released 2020.12.18.)</em>
 
 - [GAN Quantization Project](https://sites.google.com/view/swcon-graduate-thesis/%ED%99%88)  <em>(Released 2020.12.18.)</em>
 
