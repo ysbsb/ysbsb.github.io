@@ -13,6 +13,8 @@ tags: [docs]
 
 
 
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fdocs%2F2020%2F11%2F27%2Fstudy-docs.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
 > 안녕하세요. 모카의 머신러닝 입니다.
 >
 > 여러가지 공부 자료 모음에 대해 포스팅 합니다. 모음집은 아무때나 종종 업데이트 하면서 여러가지 자료를 차곡차곡 쌓아두는 형태로 포스팅 하려고 합니다. 찾게되는 분들에게 도움이 되었으면 합니다.

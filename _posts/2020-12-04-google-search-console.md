@@ -10,6 +10,8 @@ tags: [Diary]
 
 
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fdiary%2F2020%2F12%2F04%2Fgoogle-search-console.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 지금 구글 검색 콘솔에 문제가 있어 포스트 링크를 구글에 등록하지 못하고 있다. 우리의 블로그 문제는 아니여서 구글이 활성화 할 때까지 기다려야 한다고 한다.
 
 블로그에 글을 작성하면 포스트 링크를 구글 검색 콘솔에 등록한다.

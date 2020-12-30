@@ -13,6 +13,8 @@ tags: [Linux]
 
 
 
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Flinux%2F2020%2F10%2F24%2FLinux-Docker-Install.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
 > 안녕하세요. 모카의 머신러닝 입니다.
 >
 > 오늘은 개발환경에 많이 사용되는 docker를 설치하려고 합니다.
