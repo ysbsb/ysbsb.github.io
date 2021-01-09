@@ -13,6 +13,12 @@ Now interest: computer vision, model compression, reinforcement learning
 
 <br>
 
+I'm pursuing intern for next year by graduate school associated program
+
+
+
+<br>
+
 
 
 
