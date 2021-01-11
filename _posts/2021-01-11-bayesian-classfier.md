@@ -34,17 +34,19 @@ use_math: true
 
 이진 분류 문제를 수학적으로 다음과 같이 표현할 수 있다.
 
-![슬라이드1](https://user-images.githubusercontent.com/37301677/104152878-2f0eff80-5424-11eb-85ea-16b296c8f0e6.PNG)
+![슬라이드1](https://user-images.githubusercontent.com/37301677/104166216-cb91cb80-543d-11eb-968c-a2447a664001.PNG)
 
 
 
 <br>
 
+
+
 <h3>분류 문제를 위한 베이즈 정리</h3>
 
 베이즈 정리를 사용하면 이렇게 사후 확률을 다른 것으로 대치하여 계산할 수 있다.
 
-![슬라이드2](https://user-images.githubusercontent.com/37301677/104152879-30402c80-5424-11eb-9bb7-2fb6d4657290.PNG)
+![슬라이드2](https://user-images.githubusercontent.com/37301677/104166218-ccc2f880-543d-11eb-87e8-4a467ab1e218.PNG)
 
 사후 확률 계산이 우도, 사전 확률, p(x)의 계산으로 바뀌었다. 바뀐 것들은 어떻게 구할까?
 
@@ -55,13 +57,15 @@ use_math: true
 - 분모에 있는 p(x)
   - 사후 확률 값 자체가 필요한 것이 아니라 두 사후 확률 중 어느 것이 더 큰지 판단하면 됨. $\omega_{1}$ 과 $\omega_{2}$ 의 사후 확률이 공통으로 가지므로 생략해도 됨
 
+<br>
+
 
 
 <h3>최소 오류 베이시언 분류기</h3>
 
 특징 벡터를 여러 개 부류 주의 하나로 분류하는 규칙을 <strong>결정 규칙 (decision rule)</strong> 이라 하고, 결정 규칙을 사용하는 분류기를 <strong>최소 오류 베이시언 분류기 (minimum error Bayesian classifier)</strong> 라고 부른다.
 
-![슬라이드3](https://user-images.githubusercontent.com/37301677/104152880-30402c80-5424-11eb-8296-b9ffd61a3b2b.PNG)
+![슬라이드3](https://user-images.githubusercontent.com/37301677/104166219-cd5b8f00-543d-11eb-9b94-0dfc875231eb.PNG)
 
 몇 가지 특수한 경우를 가지고 베이시언 분류기의 이미를 생각해보자.
 
@@ -72,13 +76,15 @@ use_math: true
 
 
 
+<br>
+
 
 
 <h3>베이시언 분류기의 오류 확률</h3>
 
 베이시언 분류기는 어느 정도 오류를 범할까? 베이시언 분류기의 오류 확률을 정확하게 예측할 수 있다.
 
-![슬라이드4](https://user-images.githubusercontent.com/37301677/104152881-30d8c300-5424-11eb-9d46-4e52a2e04627.PNG)
+![슬라이드4](https://user-images.githubusercontent.com/37301677/104166221-cd5b8f00-543d-11eb-9304-a2c63ce0de1a.PNG)
 
 문제를 쉽게 하기 위해 두 부류의 사전 확률이 같다고 가정하자.  그림은 사전 확률이 같다는 가정 하에 부류 조건부 확률을 보여준다. 두 확률 분포 함수의 값이 같아지는 점을 t라고 하였다.
 
@@ -92,12 +98,11 @@ use_math: true
 
    
 
-# 
-
-
 
 
 <br>
+
+
 
 
 
