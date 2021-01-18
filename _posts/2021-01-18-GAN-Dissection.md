@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SinGAN 논문 리뷰 - SinGAN Learning a Generative Model from a Single Natural Image
-subtitle: SinGAN paper review - SinGAN Learning a Generative Model from a Single Natural Image
-date:   2020-12-30 21:31:31
+title: GAN Dissection 논문 리뷰 - GAN Dissection Visualizing and Understanding Generative Adversarial Networks
+subtitle: GAN Dissection paper review - AN Dissection Visualizing and Understanding Generative Adversarial Networks
+date:   2021-01-18 23:40:31
 author: Subin Yang
 categories: GAN
 tags: [GAN]
