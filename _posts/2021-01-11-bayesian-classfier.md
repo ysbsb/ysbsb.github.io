@@ -18,13 +18,19 @@ use_math: true
 
 
 
-> 베이시언 분류기
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fmachine_learning%2F2021%2F01%2F11%2Fbayesian-classfier.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+>
+> 안녕하세요 모카의 머신러닝 입니다. 이번 포스팅은 패턴인식 스터디에서 공부한 베이시언 분류기 에 대하 포스팅 합니다.
 
 
 
 <br>
 
+포스팅 하기에 앞서 MLVC 연구실 패턴인식 (오일석 저) 스터디를 하면서 공부 내용을 정리했음을 밝합니다. 
 
+
+
+<br>
 
 
 
@@ -91,6 +97,7 @@ use_math: true
 문제를 쉽게 하기 위해 두 부류의 사전 확률이 같다고 가정하자.  그림은 사전 확률이 같다는 가정 하에 부류 조건부 확률을 보여준다. 두 확률 분포 함수의 값이 같아지는 점을 t라고 하였다.
 
 - x>t 이면
+  
   - $\omega_{2}$ 로 분류하고, x<t 이면 $\omega_{1}$로 분류한다.
 - x=a 일 때
   - $p\left(x \mid \omega_{1}\right) < p\left(x \mid \omega_{2}\right)$ 이므로 베이시언 분류기는 $\omega_{2}$  로 분류한다. 
