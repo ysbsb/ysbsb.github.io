@@ -9,8 +9,6 @@ Machine Learning Researcher who likes coffee.
 
 I am doing research on fundamental machine learning and deep learning application for vision and real world.
 
-<br>
-
 -------------
 
 
