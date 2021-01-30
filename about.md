@@ -15,7 +15,7 @@ I am doing research on fundamental machine learning and deep learning applicatio
 
 I'm MS student at [MLVC Lab](https://sites.google.com/a/khu.ac.kr/mlvc/). Our lab focus on deep leaning architecture and model compression. There are some subject such as model architecture , compression, augmentation, robustness for deep learning, and it can be applicable for such as Super Resolution, Object Detection etc. And I'm in vision task team.
 
-I researched for GAN Compression methods for Model Compression (Core task) + GAN (My domain). I did other optimization and vision projects.
+I researched for GAN Compression methods for Model Compression (Core task) + GAN (My domain). I did other optimization and vision projects. Thanks to our lab study and technical resources.
 
 
 
