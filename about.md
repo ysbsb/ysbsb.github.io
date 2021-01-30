@@ -11,6 +11,10 @@ I am doing research on fundamental machine learning and deep learning applicatio
 
 <br>
 
+-------------
+
+
+
 I'm MS student at [MLVC Lab](https://sites.google.com/a/khu.ac.kr/mlvc/). Our lab focus on deep leaning architecture and model compression. There are some subject such as model architecture , compression, augmentation, robustness for deep learning, and it can be applicable for such as Super Resolution, Object Detection etc. And I'm in vision task team.
 
 I researched for GAN Compression methods for Model Compression (Core task) + GAN (My domain). I did other optimization and vision projects.
@@ -25,7 +29,15 @@ I researched for GAN Compression methods for Model Compression (Core task) + GAN
 
 <strong>News and Activities Update</strong>
 
+
+
+
+
 - TODO: 현재 연구를 위해서 GAN을 포스팅하고 있습니다. GAN stack이 어느정도 완료되면, 추후에 제 경험으로 도움을 드리기 위해서 딥러닝 경량화와 로봇자율주행 포스팅의 비중을 차근차근 10~25%씩 늘려나갈 생각이 있습니다.
+
+
+
+
 
 - RandAugment v2 <em>(Expected to release)</em>
 - SGDMix <em>(Expected to release)</em>
