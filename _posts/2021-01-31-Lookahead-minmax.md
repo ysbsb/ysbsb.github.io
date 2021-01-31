@@ -16,7 +16,7 @@ use_math: true
 
 
 
-> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2021%2F01%2F18%2FGAN-Dissection.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2021%2F01%2F31%2FLookahead-minmax.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 >
 > 안녕하세요 모카의 머신러닝 입니다. 이번에는 <em><strong>Taming GANs with Lookahead-Minmax</strong></em>, ICLR 2021 에 대해 리뷰합니다. [paper](https://arxiv.org/abs/2006.14567)
 >
