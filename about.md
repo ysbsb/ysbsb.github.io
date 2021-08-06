@@ -13,9 +13,7 @@ I am doing research on fundamental machine learning and deep learning applicatio
 
 
 
-I'm MS student at MLVC Lab. Our lab researches about deep leaning architecture and model compression. There are some subject such as model architecture , compression, augmentation, robustness for deep learning, and it can be applicable for super resolution, object detection etc. And I'm in vision task team.
 
-I researched for GAN Compression methods for Model Compression (Core task) + GAN (My domain). I did other optimization and vision projects.
 
 
 
@@ -33,11 +31,5 @@ I researched for GAN Compression methods for Model Compression (Core task) + GAN
 
 [Github](https://github.com/ysbsb)
 
-[Linkedin](https://www.linkedin.com/in/subin-yang-253144177/)
-
 [Google Scholar](https://scholar.google.co.kr/citations?user=PqxbbQwAAAAJ&hl=ko)
-
-[facebook](https://www.facebook.com/subinior.yang)
-
-[한글 프로필 데모](https://www.notion.so/Subin-Yang-Personal-Profile-38627b17d43a4c2bb6db8e4ba8e01315)  (<em>Updated 2020.12.17.</em>)
 
