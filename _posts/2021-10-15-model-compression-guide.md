@@ -11,7 +11,7 @@ comments: true
 
 
 
-> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F06%2F17%2FGAN-newbie-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fmodel_compression%2F2021%2F10%2F15%2Fmodel-compression-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 >
 > 이번 포스팅에서는 딥러닝 경량화의 개념, 딥러닝 경량화의 종류를 이야기 하려고 합니다. 여러 딥러닝 경량화 방법들의 종류를 선정하였고 이 방법들에 대해서 간단히 설명을 듣고 활용하실 수 있도록 준비해 보았습니다.
 
@@ -80,8 +80,9 @@ AdderNet
 Quantization은 가중치 양자화라고 불리고 일반적인 딥러닝 프레임워크는 모두 float 32bit 타입을 사용하는데, 이러한 변수를 int 8bit 타입으로 바꿔주는 방법입니다. Binarization 가중치 이진화는 weight 값을 -1과 +1 두 개의 값만 사용하도록 하는 방법입니다. 
 
 - 양자화 역할
-  - 네트워크 가중치의 float 32 변수를 int 8 변수로 변환
-
+  
+- 네트워크 가중치의 float 32 변수를 int 8 변수로 변환
+  
 - 양자화 장점
 
   - 예를 들어 32bit가 8비트로 뀌면 20MB인 모델을 1/4배인 5MB로 줄일 수 있다. 리소스가 제한된 디바이스에 넣을 수 있다.
