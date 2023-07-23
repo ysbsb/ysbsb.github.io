@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 딥러닝 Classification 가이드: Classification 개념과 논문 리스트
-subtitle: Deep Learning Classification Guide: Classification concept and paper list
+title: 딥러닝 Classification 가이드 - Classification 개념과 논문 리스트
+subtitle: Deep Learning Classification Guide - Classification concept and paper list
 category: [Deep_Learning]
 tags: [Deep_Learning]
 comments: true
@@ -11,7 +11,7 @@ comments: true
 
 
 
-> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fgan%2F2020%2F06%2F17%2FGAN-newbie-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2F2023%2F07%2F23%2F2023-07-23-Classification-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 >
 > 이번에는 딥러닝에서 가장 널리 사용되는 분야 중 하나인 이미지 분류에 대해 이야기하려고 합니다. 이미지 분류를 이야기하기 전에, 뉴럴 네트워크는 무엇인지 설명하고, Fully connected neural network와 Convolutional neural network의 차이에 대해 설명하고, 이미지 분류를 성장하게 만든 계기인 ILSVRC 대회에 대해서 이야기하려고 합니다.
 
