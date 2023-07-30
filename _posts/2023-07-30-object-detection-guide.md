@@ -11,7 +11,7 @@ comments: true
 
 
 
-> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2F2023%2F07%2F23%2F2023-07-23-Classification-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+> [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fysbsb.github.io%2Fdeep_learning%2F2023%2F07%2F30%2Fobject-detection-guide.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 >
 > 이번에는 딥러닝 분야 중 하나인 객체 검출 (Object Detection)에 대해 이야기 하려고 합니다.
 
